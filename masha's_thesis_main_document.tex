@@ -1,0 +1,376 @@
+% % % % % % % % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % %
+% % % This is a preamble for Masha's Thesis % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % 
+% % % % % % % % % % % % % % % % % % % % % % % % % %
+
+\documentclass[a4paper,12pt]{article} %document class
+\providecommand{\phantomsection}{def} % allows correct anchoring of unnumbered sections in toc
+\usepackage{sectsty,textcase}                     % changing section styles
+\sectionfont{\MakeTextUppercase}                  % make sections uppercase
+
+ 
+% % % % % % % % % % % % % % % % % % % % % % % % % % 
+% % % % % % % % % %ENDODING % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % %
+
+\usepackage{cmap}					              % searching in PDF
+\usepackage[utf8]{inputenc}			              % encoding of the default text
+\usepackage[english]{babel}	                      % localisation and word division
+\usepackage{gensymb}  %special symblos (e.g. degree etc)
+\usepackage{fixltx2e} % text subscript and superscript
+
+
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % 
+% % % % % % % % % %IMAGES % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % %
+
+\usepackage{graphicx}                             % for inserting images
+\graphicspath{{images/}{images2/}}                % a path to files with images
+\setlength\fboxsep{3pt}                           % distance btween \fbox{} frame and the image 
+\setlength\fboxrule{1pt}                          % \fbox{} frame line width
+\usepackage{wrapfig}                              % wrapping of figures with text
+
+
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % 
+% % % % % % % % % %TABLES % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % %
+
+\usepackage{array,tabu,booktabs}                % additional tools for tables
+\usepackage{longtable}                          % long tables
+\usepackage{multirow}                           % merging columns in table
+
+\usepackage[format=plain, labelsep=period, singlelinecheck=false, labelfont=bf, figureposition=below, tableposition=above, figurewithin=none, skip=0pt, tablewithin=none]{caption} % tuning of captions features
+
+\usepackage{multicol}                           % allows merging several columns
+\usepackage{multirow}                           % allows merging several rows
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % 
+% % % % % % % % % % PROGRAMMING % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % %
+
+\usepackage{etoolbox}                             % logic operators
+
+
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % 
+% % % % % % % % % % PAGE STYLE% % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % %
+
+\usepackage{extsizes}                             % Possibility to increase font size in article class
+\usepackage{geometry}                             % defining margins
+	\geometry{top=25mm}
+	\geometry{bottom=35mm}
+	\geometry{left=35mm}
+	\geometry{right=20mm}
+	
+%\setlength\parindent{36pt} % custom indentation in the whole document
+
+\usepackage{setspace}                             % line spacing
+%\onehalfspacing                                  % line spacing 1.5
+%\doublespacing                                   % line spacing 2
+%\singlespacing                                   % line spacing 1
+
+\usepackage{lastpage}                             % to figure out how many pages are there in the document
+
+\usepackage{soul}                                 % modifies letter styles: let­terspac­ing, un­der­lin­ing, strik­ing out, etc.
+
+%\usepackage{indentfirst}                         % indentation of the first paragraph
+\frenchspacing                                    % french spacing
+
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % 
+% % % % % % % % HYPER REFERENCES% % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % %
+
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table,rgb]{xcolor}
+\hypersetup{colorlinks=true, citecolor=blue}
+%\hypersetup{hidelinks}
+\usepackage{csquotes}                             % more instruments for hyperlinks
+
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % 
+% % % % % % % % NUMBERED LISTS %% % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % %
+
+\usepackage{enumerate}                            % set custom lables for in numbered items                           
+
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % 
+% % % % % % % % % %ACRONYMS % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % %
+
+\usepackage[savewrites=true,acronym,nomain,toc]{glossaries} % a package for abbreviation list
+\renewcommand*{\glossaryentrynumbers}[1]{} % no page numbers in acronym list
+\renewcommand*{\glspostdescription}{} % remove a dot after acronym description
+
+\makeatletter
+
+%% code for \glo@LABEL@usedonlyonce from http://tex.stackexchange.com/a/26263/21591 -- ignores acronym if its used just once
+\appto\newacronymhook{%
+  \newbool{glo@\the\glslabeltok @usedonlyonce}% define an additional switch per acronym
+}
+
+\patchcmd{\@gls@}{%
+    \glsunset{#2}%
+  }{% write appropriate information to the main auxiliary file
+    \ifglsused{#2}{%
+      \write\@auxout{\global\setbool{glo@#2@usedonlyonce}{false}}%
+    }{%
+      \write\@auxout{\global\setbool{glo@#2@usedonlyonce}{true}}%
+    }%
+    \glsunset{#2}%
+  }{}{\message{^^JPatching failed (1)^^J}}
+
+\patchcmd{\@gls@}{%
+    \glsentryfirst{#2}%
+  }{% print the long form of the acronym if the acronym is used only once
+    \ifbool{glo@#2@usedonlyonce}{\glsentrylong{#2}}{\glsentryfirst{#2}}%
+  }{}{\message{^^JPatching failed (2)^^J}}
+
+\let\old@do@wrglossary\@do@wrglossary
+\renewcommand{\@do@wrglossary}[1]{\ifbool{glo@#1@usedonlyonce}{}{\old@do@wrglossary{#1}}}
+
+\makeatother
+
+
+\makeglossaries
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % 
+% % % % % % % %A LIST OF ACRONYMS % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % %
+
+\newacronym{TBP}{TBP}{TATA-binding protein}
+\newacronym{3cpro}{3C\textsc{pro}}{3C protease}
+\newacronym{RVFV}{RVFV}{Rift Valley fever virus}
+\newacronym{TFIIB}{TFIIB}{transcription factor IIB}
+\newacronym{HSV}{HSV}{herpes simplex virus}
+\newacronym{IE}{IE}{immediate early}
+\newacronym{Mb}{Mb}{Mega base pairs}
+\newacronym{HIV}{HIV-1}{human immunodeficiency virus type 1}
+\newacronym{CRPV}{CrPV}{cricket paralysis virus}
+\newacronym{VSV}{VSV}{vesicular stomatitis virus}
+\newacronym{HA}{HA}{hemagglutinin}
+\newacronym{NA}{NA}{neuraminidase}
+\newacronym{rdrp}{RdRp}{RNA-dependent RNA polymerase}
+\newacronym{ssRNA}{ssRNA}{single-stranded RNA}
+\newacronym{(-)ssRNA}{(-)ssRNA}{single stranded RNA of negative polarity}
+
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % 
+% % % % % % % % % % TITLE PAGE % % %% % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % %
+
+\title{Influenza A virus-host interactions \\ and their control by viral non-structural protein NS1}
+\author{Maria Anastasina}
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % 
+% % % % % % % % % %BIBLATEX % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % %
+
+\usepackage[citestyle=authoryear, maxbibnames=99, firstinits=true, terseinits=true, bibstyle=authortitle]{biblatex}
+\renewcommand*{\nameyeardelim}{\addcomma\space} % adds a comma between authors and year in the in-text citation
+\DeclareNameAlias{default}{last-first} % initials appear after surname in bibliography
+\renewcommand*{\revsdnamepunct}{} % no comma between surname and initials
+\bibliography{anastasina.bib} % -- a link to file(s) contatining refs
+\bibliography{library/thesis_library.bib}
+\bibliography{library/history.bib}
+\bibliography{library/host_range_IAV.bib}
+\bibliography{library/avian.bib}
+\bibliography{library/IAV_organisation.bib}
+
+\setlength{\bibitemsep}{\baselineskip} %  adds emty line between bibliography entries
+
+\DeclareCiteCommand{\parencite}[\mkbibparens] %hyperref date AND author
+  {\usebibmacro{prenote}}
+  {\usebibmacro{citeindex}%
+    \printtext[bibhyperref]{\usebibmacro{cite}}}
+  {\multicitedelim}
+  {\usebibmacro{postnote}}
+
+\DeclareCiteCommand*{\parencite}[\mkbibparens] %hyperref date AND author
+  {\usebibmacro{prenote}}
+  {\usebibmacro{citeindex}%
+    \printtext[bibhyperref]{\usebibmacro{citeyear}}}
+  {\multicitedelim}
+  {\usebibmacro{postnote}}
+
+
+	
+% % % % % % % % % % % % % % % % % % % % % % % % % % 
+% % % % % % % %END OF PREAMBLE % % %% % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % %
+	
+\begin{document}
+
+
+% % % % % % % % % % % % % % % % % % % % %
+% % % % % TITLE PAGE (MANUAL) % % % % % %
+% % % % % % % % % % % % % % % % % % % % %
+
+\begin{titlepage}
+	\begin{center}
+		
+		\vspace*{1.5 cm}	
+	
+		\LARGE \textsc{Influenza A Virus-host Interactions and Their Control by Viral Non-structural Protein NS1}
+		
+		\vspace{2 cm}
+		
+		\Large \textsc{Maria Anastasina}
+		
+		\vspace{2 cm}
+		
+		\large Institute for Molecular Medicine, Finland \\
+		and\\
+		Division of Microbiology \\
+		Department of Biosciences \\
+		Faculty of Biological and Environmental Sciences\\
+		and\\
+		Graduate Program in Biomedicine\\
+		University of Helsinki
+		
+		\vspace{2.5 cm}
+		
+		\large \textsc{Academic Dissertation}
+		
+		\vspace{1 cm}		
+		
+		\textit{To be presented for public examination with the permission of the Faculty of Biological and Environmental Sciences of the University of Helsinki in auditorium XXX on Friday, XXX XXX 2014, at~12~o'clock~noon}
+		
+		\vspace{1.5 cm}
+		\large \textsc{Helsinki 2015}
+	\end{center}
+\end{titlepage}
+
+\newpage
+\thispagestyle{empty}
+
+	\begin{tabular}{p{4.5cm}l}
+		\textsc{Supervisors} & Docent Denis Kainov, Ph.\,D.\\
+		& Institute for Molecular Medicine Finland,\\
+		& University of Helsinki, Finland \\
+	\rule[0.6 cm]{0pt}{0pt}	& Docent Sarah Butcher, Ph.\,D.\\
+		& Research Director \\
+		& Structural Biology and Biophysics Program,\\
+		& Institute of Biotechnology,\\
+		& University of Helsinki, Finland\\
+	\rule[1 cm]{0pt}{0pt}	\textsc{Reviewers} & Docent Maija Vihinen-Ranta, Ph.\,D. \\
+		& Nanoscience Center, \\
+		& Department of  Biological and Environmental Science, \\
+		& University of Jyväskylä, \\
+		& Finland \\
+	\rule[0.6 cm]{0pt}{0pt}	& \fboxsep=0pt\colorbox{yellow}{Second reviewer's name} \\
+		& Second reviewers's title \\
+		& Second reviewer's affiliation \\
+		& Finland \\
+	\rule[1 cm]{0pt}{0pt}	\textsc{Opponent} & Professor Stephan Ludwig \\
+		& Institute of Molecular Virology \\
+		& Centre for Molecular Biology of Inflammation \\
+		& University of M\"{u}nster, Germany \\
+	\rule[1 cm]{0pt}{0pt}	\fboxsep=0pt\colorbox{yellow}{\textsc{Custodian}} & Name of the Custodian \\
+		& Title of Custodian \\
+		& Affiliation of Custodian, Finland \\
+	\rule[1 cm]{0pt}{0pt} \textsc{Thesis Committee} & Professor Kalle Saksela \\
+		& Department of Virology, Haartman Institute \\
+		& University of Helsinki, Finland \\
+	\rule[0.6 cm]{0pt}{0pt}	& Professor Dennis Bamford \\
+		& Institute of Biotechnology \\
+		& University of Helsinki, Finland\\
+	\end{tabular} 
+
+\vspace{2 cm}
+
+\copyright Maria Anastasina 2015 \\
+
+% {\fboxsep=0pt\colorbox{green!50}{\strut правильно}}
+
+\fboxsep=0pt\colorbox{yellow}{ISBN XXX-XXX-XXX-XXX (paperback)}
+
+\fboxsep=0pt\colorbox{yellow}{ISBN XXX-XXX-XXX-XXX (PDF, \url{http://ethesis.helsinki.fi})}\\
+
+\fboxsep=0pt\colorbox{yellow}{Printing house name, Helsinki 2015}
+
+% % % % % % % % % % % % % % % % % % % % %
+% % % % % % TABLE OF CONTENTS % % % % % %
+% % % % % % % % % % % % % % % % % % % % %
+
+\newpage
+\thispagestyle{empty}
+\tableofcontents
+
+% % % % % % % % % % % % % % % % % % % % %
+% % % LIST OF ORIGINAL PUBLICATIONS % % %
+% % % % % % % % % % % % % % % % % % % % %
+
+\newpage
+\thispagestyle{empty}
+\section*{List of original publications}
+\phantomsection % allows correct anchoring of this section in toc
+\addcontentsline{toc}{section}{List of original publications} %add to toc
+
+	\begin{enumerate}[I]
+
+	\item \textbf{Anastasina M} et al. Influenza A virus non-structural protein NS1 binds DNA to control host gene expression. Manuscript. \label{DNA}
+	
+	\item 	Kainov DE, Müller KH, Theisen LL, \textbf{Anastasina M}, Kaloinen M, Muller CP. Differential effects of NS1 proteins of human pandemic H1N1/2009, avian highly pathogenic H5N1, and low pathogenic H5N2 influenza A viruses on cellular pre-mRNA polyadenylation and mRNA translation. J Biol Chem. 2011 Mar 4;286(9):7239-47. doi: 10.1074/jbc.M110.203489. Epub 2010 Dec 16.\label{Transl}
+	
+	\item \textbf{Anastasina M} et al. C-terminus of influenza A virus non-structural protein NS1 contributes to counteraction of antiviral responses. Submitted.\label{Cterm}
+	
+	\item \textbf{Anastasina M}, Terenin I, Butcher S, Kainov D. A technique to increase protein yield in a rabbit reticulocyte lysate translation system. Biotechniques. 2014 Jan;56(1):36-9. doi: 10.2144/000114125. \label{RRL}
+	
+\end{enumerate}
+
+% % % % % % % % % % % % % % % % % % % % %
+% % % % % % % THESIS SUMMARY% % % % % % %
+% % % % % % % % % % % % % % % % % % % % %
+
+\newpage
+\thispagestyle{empty}
+\section*{Summary}
+\phantomsection % allows correct anchoring of this section in toc
+\addcontentsline{toc}{section}{Summary} %add to toc
+
+% % % % % % % % % % % % % % % % % % % % %
+% % % % % % % ABBREVIATIONS % % % % % % %
+% % % % % % % % % % % % % % % % % % % % %
+
+\newpage
+\thispagestyle{empty}
+\printglossary[type=acronym, title={Abbreviations}]
+
+
+
+% % % % % % % % % % % % % % % % % % % % %
+% % % % % % % MAIN DOCUMENT % % % % % % %
+% % % % % % % % % % % % % % % % % % % % %
+
+\input{./review/review} %section "Review of Literature"
+	
+\input{./objectives/obj}	%section "Objectives"
+
+\input{./matmet/matmet} %section "Materials and methods"
+
+\input{./results/results} % section "Results and discussion"
+
+\input{./conclusions/conclusions} %section "Conclusions and perspectives"
+
+\input{./acknowledgements/acknowledgements} %section "Acknowledgements"
+
+% % % % % % % % % % % % % % % % % % % % %
+% % % % % % % %REFERENCES % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % %
+
+\newpage
+\section{Test}
+
+as studied in \parencite{Anastasina2014, Feng2012} and then in also \cite{Feng2012} we show blah blah. \cite{Kainov2011a} is a paper also.
+
+\newpage
+\phantomsection % allows correct anchoring of this section in toc
+\printbibliography[heading=bibintoc] % -- only includes refs that are mentioned in the text
+
+\end{document}
