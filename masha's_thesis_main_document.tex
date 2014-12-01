@@ -17,6 +17,7 @@
 \usepackage{cmap}					              % searching in PDF
 \usepackage[utf8]{inputenc}			              % encoding of the default text
 \usepackage[english]{babel}	                      % localisation and word division
+
 \usepackage{gensymb}  %special symblos (e.g. degree etc)
 \usepackage{fixltx2e} % text subscript and superscript
 
@@ -158,7 +159,18 @@
 \newacronym{rdrp}{RdRp}{RNA-dependent RNA polymerase}
 \newacronym{ssRNA}{ssRNA}{single-stranded RNA}
 \newacronym{(-)ssRNA}{(-)ssRNA}{single stranded RNA of negative polarity}
-
+\newacronym{M2}{M2}{M2 proton channel}
+\newacronym{M1}{M1}{matrix protein}
+\newacronym{vRNP}{vRNP}{viral ribonucleoproteins}
+\newacronym{NP}{NP}{nucleoprotein}
+\newacronym{PB1}{PB1}{polymerase basic protein 1}
+\newacronym{PB2}{PB2}{polymerase basic protein 2}
+\newacronym{PA}{PA}{polymerase acidic protein}
+\newacronym{NS1}{NS1}{non-structural protein}
+\newacronym{NEP}{NEP}{nuclear export protein}
+\newacronym{cRNP}{cRNP}{complimentary nucleoprotein complex}
+\newacronym{vRNA}{vRNA}{viral RNA}
+\newacronym{5meG}{5'meG}{5' methylated guanine}
 
 % % % % % % % % % % % % % % % % % % % % % % % % % % 
 % % % % % % % % % % TITLE PAGE % % %% % % % % % % %
@@ -175,12 +187,19 @@
 \renewcommand*{\nameyeardelim}{\addcomma\space} % adds a comma between authors and year in the in-text citation
 \DeclareNameAlias{default}{last-first} % initials appear after surname in bibliography
 \renewcommand*{\revsdnamepunct}{} % no comma between surname and initials
-\bibliography{anastasina.bib} % -- a link to file(s) contatining refs
+\DeclareFieldFormat{titlecase}{\MakeSentenceCase{#1}}
+
+\bibliography{anastasina.bib}
 \bibliography{library/thesis_library.bib}
+\bibliography{library/human_and_IAV.bib}
 \bibliography{library/history.bib}
-\bibliography{library/host_range_IAV.bib}
-\bibliography{library/avian.bib}
 \bibliography{library/IAV_organisation.bib}
+\bibliography{library/host_range_IAV.bib}
+\bibliography{library/economics.bib}
+\bibliography{library/IAV_structure_cycle.bib}
+\bibliography{library/NS1.bib}
+\bibliography{library/replication_cycle.bib}
+
 
 \setlength{\bibitemsep}{\baselineskip} %  adds emty line between bibliography entries
 
@@ -364,10 +383,10 @@
 % % % % % % % %REFERENCES % % % % % % % %
 % % % % % % % % % % % % % % % % % % % % %
 
-\newpage
-\section{Test}
+%\newpage
+%\section{Test}
 
-as studied in \parencite{Anastasina2014, Feng2012} and then in also \cite{Feng2012} we show blah blah. \cite{Kainov2011a} is a paper also.
+%as studied in \parencite{Anastasina2014, Feng2012} and then in also \cite{Feng2012} we show blah blah. \cite{Kainov2011a} is a paper also.
 
 \newpage
 \phantomsection % allows correct anchoring of this section in toc
