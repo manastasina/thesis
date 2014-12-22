@@ -8,6 +8,9 @@
 \providecommand{\phantomsection}{def} % allows correct anchoring of unnumbered sections in toc
 \usepackage{sectsty,textcase}                     % changing section styles
 \sectionfont{\MakeTextUppercase}                  % make sections uppercase
+\usepackage{setspace}
+\onehalfspacing 
+%\doublespacing
 
  
 % % % % % % % % % % % % % % % % % % % % % % % % % % 
@@ -17,6 +20,7 @@
 \usepackage{cmap}					              % searching in PDF
 \usepackage[utf8]{inputenc}			              % encoding of the default text
 \usepackage[english]{babel}	                      % localisation and word division
+%\usepackage[bibencoding=latin9]{biblatex}
 
 \usepackage{gensymb}  %special symblos (e.g. degree etc)
 \usepackage{fixltx2e} % text subscript and superscript
@@ -191,6 +195,29 @@
 \newacronym{PKR}{PKR}{protein kinase R}
 \newacronym{RBD}{RBD}{RNA-dinding domain}
 \newacronym{ED}{ED}{effector domain}
+\newacronym{NFkB}{NFkB}{nuclear factor kappa-light-chain-enhancer of activated B cells}
+\newacronym{IL}{IL}{interleukin}
+\newacronym{RLR}{RLR}{RIG-I-like receptors}
+\newacronym{MDA5}{MDA5}{melanoma differentiation-associated protein 5}
+\newacronym{LGP2}{LGP2}{laboratory of genetics and physiology-2}
+\newacronym{CTD}{CTD}{C-terminal domain}
+\newacronym{CARD}{CARD}{caspase recruitment domains}
+\newacronym{MAVS}{MAVS}{mitochondrial antiviral-signaling protein}
+\newacronym{IKK}{IKK}{Inhibitor of nuclear factor kappa-B kinase}
+\newacronym{JAK}{JAK}{Janus kinase}
+\newacronym{SOCS3}{SOCS-3}{suppressor of cytokine signaling-3}
+\newacronym{AP1}{AP-1}{activator protein 1}
+%\newacronym{TRIM25}{TRIM25}{tripartite motif-containing protein 25}
+\newacronym{IRF}{IRF}{interferon regulatory factor}
+\newacronym{TRIF}{TRIF}{TIR-domain-containing adapter-inducing interferon-$\beta$}
+\newacronym{MAPK}{MAPK}{mitogen-activated protein kinases}
+\newacronym{JNK}{JNK}{c-Jun N-terminal kinase}
+\newacronym{TBK1}{TBK1}{TANK-binding kinase 1}
+\newacronym{STAT}{STAT}{signal transducers and activators of transcription}
+\newacronym{ISG}{ISG}{interferon-stimulated genes}
+\newacronym{CPSF}{CPSF}{cleavage and polyadenylation specific factor}
+
+
 
 % % % % % % % % % % % % % % % % % % % % % % % % % % 
 % % % % % % % % % % TITLE PAGE % % %% % % % % % % %
@@ -203,7 +230,7 @@
 % % % % % % % % % %BIBLATEX % % % % % % % % % % % %
 % % % % % % % % % % % % % % % % % % % % % % % % % %
 
-\usepackage[citestyle=authoryear, maxbibnames=99, maxcitenames=2, firstinits=true, terseinits=true, bibstyle=authortitle]{biblatex}
+\usepackage[backend=biber, citestyle=authoryear, maxbibnames=99, maxcitenames=2, firstinits=true, terseinits=true, bibstyle=authortitle, doi=false, url=false, isbn=false]{biblatex}
 \renewcommand*{\nameyeardelim}{\addcomma\space} % adds a comma between authors and year in the in-text citation
 \DeclareNameAlias{default}{last-first} % initials appear after surname in bibliography
 \renewcommand*{\revsdnamepunct}{} % no comma between surname and initials
@@ -222,6 +249,9 @@
 \bibliography{library/IAV_host_factors.bib}
 \bibliography{library/responses_to_IAV.bib}
 \bibliography{library/NS1_structure.bib}
+\bibliography{library/rig-i.bib}
+\bibliography{library/NS1_pretranscr.bib}
+\bibliography{library/NS1_posttranscr.bib}
 
 \setlength{\bibitemsep}{\baselineskip} %  adds emty line between bibliography entries
 
