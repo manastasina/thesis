@@ -9,7 +9,7 @@
 \usepackage{sectsty,textcase}                     % changing section styles
 \sectionfont{\MakeTextUppercase}                  % make sections uppercase
 \usepackage{setspace}
-\onehalfspacing 
+%\onehalfspacing 
 %\doublespacing
 
  
@@ -216,8 +216,10 @@
 \newacronym{STAT}{STAT}{signal transducers and activators of transcription}
 \newacronym{ISG}{ISG}{interferon-stimulated genes}
 \newacronym{CPSF}{CPSF}{cleavage and polyadenylation specific factor}
-
-
+\newacronym{PACT}{PACT}{protein activator of the interferon-induced protein kinase}
+\newacronym{eIF2a}{eIF2$\alpha$}{translation initiation factor 2 $\alpha$}
+\newacronym{OAS}{OAS}{2'-5'-oligoadenylate syntethase}
+\newacronym{RNAseL}{RNAse L}{ribonuclease L}
 
 % % % % % % % % % % % % % % % % % % % % % % % % % % 
 % % % % % % % % % % TITLE PAGE % % %% % % % % % % %
@@ -252,6 +254,7 @@
 \bibliography{library/rig-i.bib}
 \bibliography{library/NS1_pretranscr.bib}
 \bibliography{library/NS1_posttranscr.bib}
+\bibliography{library/NS1_posttransl.bib}
 
 \setlength{\bibitemsep}{\baselineskip} %  adds emty line between bibliography entries
 
@@ -442,6 +445,8 @@
 
 \newpage
 \phantomsection % allows correct anchoring of this section in toc
+\setlength\bibitemsep{0pt}
 \printbibliography[heading=bibintoc] % -- only includes refs that are mentioned in the text
+
 
 \end{document}
