@@ -10,10 +10,10 @@
 \sectionfont{\MakeTextUppercase}                  % make sections uppercase
 \usepackage{setspace}
 %\onehalfspacing 
-%\doublespacing
+\doublespacing
 
  
-% % % % % % % % % % % % % % % % % % % % % % % % % % 
+% % % % % % % % %IFN % % % % % % % % % % % % % % % % % 
 % % % % % % % % % %ENDODING % % % % % % % % % % % %
 % % % % % % % % % % % % % % % % % % % % % % % % % %
 
@@ -32,10 +32,10 @@
 % % % % % % % % % % % % % % % % % % % % % % % % % %
 
 \usepackage{graphicx}                             % for inserting images
-\graphicspath{{images/}{images2/}}                % a path to files with images
+\graphicspath{ {./images/} }                % a path to files with images "images" folder is in same folder as main document
 \setlength\fboxsep{3pt}                           % distance btween \fbox{} frame and the image 
 \setlength\fboxrule{1pt}                          % \fbox{} frame line width
-\usepackage{wrapfig}                              % wrapping of figures with text
+%\usepackage{wrapfig}                              % wrapping of figures with text
 
 
 
@@ -47,7 +47,7 @@
 \usepackage{longtable}                          % long tables
 \usepackage{multirow}                           % merging columns in table
 
-\usepackage[format=plain, labelsep=period, singlelinecheck=false, labelfont=bf, figureposition=below, tableposition=above, figurewithin=none, skip=0pt, tablewithin=none]{caption} % tuning of captions features
+\usepackage[format=plain, labelsep=period, singlelinecheck=false, labelfont=bf, figureposition=below, tableposition=above, figurewithin=none, skip=2pt, tablewithin=none]{caption} % tuning of captions features
 
 \usepackage{multicol}                           % allows merging several columns
 \usepackage{multirow}                           % allows merging several rows
@@ -93,7 +93,7 @@
 \usepackage{hyperref}
 \usepackage[usenames,dvipsnames,svgnames,table,rgb]{xcolor}
 \hypersetup{colorlinks=true, citecolor=blue}
-%\hypersetup{hidelinks}
+\hypersetup{hidelinks}
 \usepackage{csquotes}                             % more instruments for hyperlinks
 
 
@@ -176,13 +176,12 @@
 \newacronym{vRNA}{vRNA}{viral RNA}
 \newacronym{5meG}{5'meG}{5' methylated guanine}
 \newacronym{vATPase}{vATPase}{vacuolar proton-ATPase}
-\newacronym{RdRp}{RdRp}{RNA-dependent RNA polymerase}
-\newacronym{PRR}{PRR}{pattern recognition receptors}
-\newacronym{PAMP}{PAMP}{pathogen-associated molecular patterns}
+\newacronym{PRR}{PRR}{pattern recognition receptor}
+\newacronym{PAMP}{PAMP}{pathogen-associated molecular pattern}
 \newacronym{TLR}{TLR}{Toll-like receptors}
 \newacronym{RIG-I}{RIG-I}{retinoid acid inducible gene I}
 \newacronym{NLRP3}{NLRP3}{LRR- and pyrin domain-containing protein 3}
-\newacronym{DC}{DC}{dendritic cells}
+\newacronym{DC}{DC}{dendritic cell}
 \newacronym{ASC}{ASC}{Apoptosis-associated speck-like protein containing a CARD domain}
 \newacronym{ORF}{ORF}{open reading frame}
 \newacronym{NLS}{NLS}{nuclear localization sequence}
@@ -201,7 +200,7 @@
 \newacronym{MDA5}{MDA5}{melanoma differentiation-associated protein 5}
 \newacronym{LGP2}{LGP2}{laboratory of genetics and physiology-2}
 \newacronym{CTD}{CTD}{C-terminal domain}
-\newacronym{CARD}{CARD}{caspase recruitment domains}
+\newacronym{CARD}{CARD}{caspase recruitment domain}
 \newacronym{MAVS}{MAVS}{mitochondrial antiviral-signaling protein}
 \newacronym{IKK}{IKK}{Inhibitor of nuclear factor kappa-B kinase}
 \newacronym{JAK}{JAK}{Janus kinase}
@@ -210,14 +209,14 @@
 %\newacronym{TRIM25}{TRIM25}{tripartite motif-containing protein 25}
 \newacronym{IRF}{IRF}{interferon regulatory factor}
 \newacronym{TRIF}{TRIF}{TIR-domain-containing adapter-inducing interferon-$\beta$}
-\newacronym{MAPK}{MAPK}{mitogen-activated protein kinases}
+\newacronym{MAPK}{MAPK}{mitogen-activated protein kinase}
 \newacronym{JNK}{JNK}{c-Jun N-terminal kinase}
 \newacronym{TBK1}{TBK1}{TANK-binding kinase 1}
-\newacronym{STAT}{STAT}{signal transducers and activators of transcription}
-\newacronym{ISG}{ISG}{interferon-stimulated genes}
+\newacronym{STAT}{STAT}{signal transducer and activator of transcription}
+\newacronym{ISG}{ISG}{interferon-stimulated gene}
 \newacronym{CPSF}{CPSF}{cleavage and polyadenylation specific factor}
 \newacronym{PACT}{PACT}{protein activator of the interferon-induced protein kinase}
-\newacronym{eIF2a}{eIF2$\alpha$}{translation initiation factor 2 $\alpha$}
+\newacronym{eIF2a}{eIF2$\alpha$}{translation initiation factor 2$\alpha$}
 \newacronym{OAS}{OAS}{2'-5'-oligoadenylate syntethase}
 \newacronym{RNAseL}{RNAse L}{ribonuclease L}
 \newacronym{MxA}{MxA}{myxovirus resistance gen product}
@@ -242,6 +241,13 @@
 \newacronym{IRES}{IRES}{internal ribosome entry site}
 \newacronym{EMCV}{EMCV}{encephalomyocarditis virus}
 \newacronym{NLR}{NLR}{NOD-like receptor}
+\newacronym{CTL}{CTL}{cytotoxic T lymphocyte}
+\newacronym{aa}{aa}{amino acid}
+\newacronym{CDK5}{CDK5}{cyclin-dependent kinase 5}
+\newacronym{ERK2}{ERK2}{extracellular signal-regulated kinase 2}
+\newacronym{polyA}{poly(A)}{polyadenine stretch}
+\newacronym{SH3}{SH3}{Src-homology 3 domain}
+\newacronym{polyic}{poly(I:C)}{polyinosinic:polycytidylic acid}
 
 % % % % % % % % % % % % % % % % % % % % % % % % % % 
 % % % % % % % % % % TITLE PAGE % % %% % % % % % % %
@@ -254,9 +260,27 @@
 % % % % % % % % % %BIBLATEX % % % % % % % % % % % %
 % % % % % % % % % % % % % % % % % % % % % % % % % %
 
-\usepackage[backend=biber, citestyle=authoryear, maxbibnames=99, maxcitenames=2, firstinits=true, terseinits=true, bibstyle=authortitle, doi=false, url=false, isbn=false]{biblatex}
+\usepackage[backend=biber, 
+citestyle=authoryear, 
+uniquename=false, 
+dashed=false %reprint recurrent author names in bibliography
+maxbibnames=99, 
+maxcitenames=2, 
+firstinits=true, 
+terseinits=true, 
+bibstyle=authortitle, 
+doi=false, 
+url=false,
+useprefix=true, %includes prefix 'de' 'la' etc 
+uniquename=false,
+labelyear=true,
+uniquelist=false,
+uniquelist=minyear,
+isbn=false]{biblatex}
+
 \renewcommand*{\nameyeardelim}{\addcomma\space} % adds a comma between authors and year in the in-text citation
 \DeclareNameAlias{default}{last-first} % initials appear after surname in bibliography
+\DeclareNameAlias{sortname}{last-first} % in bibliogaraphy last name, then initials for all authors
 \renewcommand*{\revsdnamepunct}{} % no comma between surname and initials
 \DeclareFieldFormat{titlecase}{\MakeSentenceCase{#1}}
 
@@ -297,13 +321,13 @@
   {\usebibmacro{postnote}}
 
 
-	
+
 % % % % % % % % % % % % % % % % % % % % % % % % % % 
 % % % % % % % %END OF PREAMBLE % % %% % % % % % % %
 % % % % % % % % % % % % % % % % % % % % % % % % % %
 	
 \begin{document}
-
+\begin{singlespace}
 
 % % % % % % % % % % % % % % % % % % % % %
 % % % % % TITLE PAGE (MANUAL) % % % % % %
@@ -311,7 +335,9 @@
 
 \begin{titlepage}
 	\begin{center}
-		
+	
+	
+		\thispagestyle{empty}
 		\vspace*{1.5 cm}	
 	
 		\LARGE \textsc{Influenza A Virus-host Interactions and Their Control by Viral Non-structural Protein NS1}
@@ -391,6 +417,7 @@
 \fboxsep=0pt\colorbox{yellow}{ISBN XXX-XXX-XXX-XXX (PDF, \url{http://ethesis.helsinki.fi})}\\
 
 \fboxsep=0pt\colorbox{yellow}{Printing house name, Helsinki 2015}
+\end{singlespace}
 
 % % % % % % % % % % % % % % % % % % % % %
 % % % % % % TABLE OF CONTENTS % % % % % %
@@ -412,13 +439,22 @@
 
 	\begin{enumerate}[I]
 
-	\item \textbf{Anastasina M} et al. Influenza A virus non-structural protein NS1 binds DNA to control host gene expression. Manuscript. \label{DNA}
+	\item \textbf{Anastasina M*}, Le May N*, Butcher SJ, Egly JM, Kainov DE. Influenza A non-structural protein NS1 binds DNA to control host antiviral gene expression. Manuscript. (* = equal contribution). \label{DNA}	
+	\item 	Kainov DE, Müller KH, Theisen LL, \textbf{Anastasina M}, Kaloinen M, Muller CP. Differential effects of NS1 proteins of human pandemic H1N1/2009, avian highly pathogenic H5N1, and low pathogenic H5N2 influenza A viruses on cellular pre-mRNA polyadenylation and mRNA translation. \textit{J Biol Chem.} 2011 Mar 4;286(9). \label{Transl}		
+	\item \textbf{Anastasina M}, Schepens B, Saksela K, Saelens X, Kainov D. The length of C-terminus of influenza NS1 is essential for virus-host interplay. Manuscript. \label{Cterm}	
+	\item \textbf{Anastasina M}, Terenin I, Butcher S, Kainov D. A technique to increase protein yield in a rabbit reticulocyte lysate translation system. \textit{Biotechniques.} 2014. 56(1):36-9. \label{RRL}
 	
-	\item 	Kainov DE, Müller KH, Theisen LL, \textbf{Anastasina M}, Kaloinen M, Muller CP. Differential effects of NS1 proteins of human pandemic H1N1/2009, avian highly pathogenic H5N1, and low pathogenic H5N2 influenza A viruses on cellular pre-mRNA polyadenylation and mRNA translation. J Biol Chem. 2011 Mar 4;286(9):7239-47. doi: 10.1074/jbc.M110.203489. Epub 2010 Dec 16. \label{Transl}
+	\vspace{1.5 cm}
+	Author's independent contribution to this work:
+	\vspace{2 mm}
 	
-	\item \textbf{Anastasina M} et al. C-terminus of influenza A virus non-structural protein NS1 contributes to counteraction of antiviral responses. Submitted. \label{Cterm}
+	Study I: MA participated in design and performed experiments on DNA binding by NS1, did transcriptional and cytokine profiling of infected cells, did protein localization and ChIP experiments and interpreted the obtained data. NLM did \textit{in vitro} transcription experiments and studied immune responses activation in transfected cells. MA, SB and DK wrote the manuscript. \vspace{2 mm}
 	
-	\item \textbf{Anastasina M}, Terenin I, Butcher S, Kainov D. A technique to increase protein yield in a rabbit reticulocyte lysate translation system. Biotechniques. 2014 Jan;56(1):36-9. doi: 10.2144/000114125. \label{RRL}
+	Study II: MA did experiments addressing mRNA concentration effects on \textit{in vitro} translation, effects of NS1 on mRNA stability and loss- and gain-of-function experiments with NS1 mutants. MA interpreted the obtained results and contributed to writing of the paper.\vspace{2 mm}
+	
+	Study III: MA designed and performed transcriptional, cytokine and phosphoprotein profiling in infected cells and interpreted the data. MA and DK wrote the manuscript.\vspace{2 mm}
+	
+	Study IV: MA designed and performed experiments on cellular mRNA translation and polysome formation in rabbit lysate and interpreted the data. MA, SB, and DK wrote the manuscript.
 	
 \end{enumerate}
 
@@ -431,6 +467,13 @@
 \section*{Summary}
 \phantomsection % allows correct anchoring of this section in toc
 \addcontentsline{toc}{section}{Summary} %add to toc
+
+Viruses infect all domains of life and establish complex interactions with their hosts to warrant their own replication by subverting and hijacking multiple cellular processes. Understanding virus-host interactions is critical for controlling spread of pathogenic viruses, developing vaccines and searching for antivirals. Besides that, understanding virus-host interactions allows deciphering complex cellular processes and provides useful tools for biotechnology.
+
+My research is dedicated to influenza A virus, an important pathogen that infects humans worldwide, represents a constant health care threat and requires thorough control. Influenza A expresses a non-structural protein NS1 that is a key regulator of viral interactions with the host cell and an important virulence factor. Versatile functions of NS1 modulate multiple cellular functions to secure viral replication.
+
+This work addresses several aspects of NS1-mediated modulation of core cellular processes. It describes the mechanism by which NS1 controls cellular transcription, studies modulation protein synthesis by NS1, and investigates the effects of NS1 protein length polymorphisms on development of antiviral responses. The presented results increase our understanding of influenza A virus-host interactions and can be further utilized in the search for antivirals and vaccine development. In addition, this work provides a biotechnological application of influenza A NS1 protein for improvement of cell-free translation system.
+
 
 % % % % % % % % % % % % % % % % % % % % %
 % % % % % % % ABBREVIATIONS % % % % % % %
@@ -468,6 +511,7 @@
 \newpage
 \phantomsection % allows correct anchoring of this section in toc
 \setlength\bibitemsep{0pt}
+\singlespacing
 \printbibliography[heading=bibintoc] % -- only includes refs that are mentioned in the text
 
 
