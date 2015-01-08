@@ -46,6 +46,7 @@
 \usepackage{array,tabu,booktabs}                % additional tools for tables
 \usepackage{longtable}                          % long tables
 \usepackage{multirow}                           % merging columns in table
+\usepackage{ltablex} % combination of longrable and tabularx
 
 \usepackage[format=plain, labelsep=period, singlelinecheck=false, labelfont=bf, figureposition=below, tableposition=above, figurewithin=none, skip=2pt, tablewithin=none]{caption} % tuning of captions features
 
@@ -162,7 +163,6 @@
 \newacronym{NA}{NA}{neuraminidase}
 \newacronym{rdrp}{RdRp}{RNA-dependent RNA polymerase}
 \newacronym{ssRNA}{ssRNA}{single-stranded RNA}
-\newacronym{(-)ssRNA}{(-)ssRNA}{single stranded RNA of negative polarity}
 \newacronym{M2}{M2}{M2 proton channel}
 \newacronym{M1}{M1}{matrix protein}
 \newacronym{vRNP}{vRNP}{viral ribonucleoprotein}
@@ -178,8 +178,8 @@
 \newacronym{vATPase}{vATPase}{vacuolar proton-ATPase}
 \newacronym{PRR}{PRR}{pattern recognition receptor}
 \newacronym{PAMP}{PAMP}{pathogen-associated molecular pattern}
-\newacronym{TLR}{TLR}{Toll-like receptors}
-\newacronym{RIG-I}{RIG-I}{retinoid acid inducible gene I}
+\newacronym{TLR}{TLR}{Toll-like receptor}
+\newacronym{RIG-I}{RIG-I}{retinoic acid inducible gene I}
 \newacronym{NLRP3}{NLRP3}{LRR- and pyrin domain-containing protein 3}
 \newacronym{DC}{DC}{dendritic cell}
 \newacronym{ASC}{ASC}{Apoptosis-associated speck-like protein containing a CARD domain}
@@ -192,11 +192,11 @@
 \newacronym{PKCa}{PKC$\alpha$}{protein kinase C alpha}
 \newacronym{IFN}{IFN}{interferon}
 \newacronym{PKR}{PKR}{protein kinase R}
-\newacronym{RBD}{RBD}{RNA-dinding domain}
+\newacronym{RBD}{RBD}{RNA-binding domain}
 \newacronym{ED}{ED}{effector domain}
 \newacronym{NFkB}{NFkB}{nuclear factor kappa-light-chain-enhancer of activated B cells}
 \newacronym{IL}{IL}{interleukin}
-\newacronym{RLR}{RLR}{RIG-I-like receptors}
+\newacronym{RLR}{RLR}{RIG-I-like receptor}
 \newacronym{MDA5}{MDA5}{melanoma differentiation-associated protein 5}
 \newacronym{LGP2}{LGP2}{laboratory of genetics and physiology-2}
 \newacronym{CTD}{CTD}{C-terminal domain}
@@ -219,8 +219,8 @@
 \newacronym{eIF2a}{eIF2$\alpha$}{translation initiation factor 2$\alpha$}
 \newacronym{OAS}{OAS}{2'-5'-oligoadenylate syntethase}
 \newacronym{RNAseL}{RNAse L}{ribonuclease L}
-\newacronym{MxA}{MxA}{myxovirus resistance gen product}
-\newacronym{GTPase}{GTPase}{guanosin triphosphatase}
+\newacronym{MxA}{MxA}{myxovirus resistance gene product}
+\newacronym{GTPase}{GTPase}{guanosine triphosphatase}
 \newacronym{IFITM3}{IFITM3}{interferon-inducible transmembrane protein 3}
 \newacronym{CH25H}{CH25H}{cholesterol 25-hydroxylase}
 \newacronym{SV40}{SV40}{simian virus 40}
@@ -383,8 +383,8 @@ isbn=false]{biblatex}
 		& Institute of Biotechnology,\\
 		& University of Helsinki, Finland\\
 	\rule[1 cm]{0pt}{0pt}	\textsc{Reviewers} & Professor Thedi Ziegler, Ph.\,D. \\
-		& Istitute for Health and Welfare, \\
-		& Helsinki, \\
+		& Research Center for Child Psychiatry, Institute of Clinical Medicine \\ & University of Turku, \\
+		& Turku, \\
 		& Finland \\
 	\rule[0.6 cm]{0pt}{0pt}	& Docent Maija Vihinen-Ranta \\
 		& Nanoscience Center, \\
@@ -396,8 +396,8 @@ isbn=false]{biblatex}
 		& Centre for Molecular Biology of Inflammation \\
 		& University of M\"{u}nster, Germany \\
 	\rule[1 cm]{0pt}{0pt}	\fboxsep=0pt\colorbox{yellow}{\textsc{Custodian}} & Name of the Custodian \\
-		& Title of Custodian \\
-		& Affiliation of Custodian, Finland \\
+		& TBD \\
+		& TBD \\
 	\rule[1 cm]{0pt}{0pt} \textsc{Thesis Committee} & Professor Kalle Saksela \\
 		& Department of Virology, Haartman Institute \\
 		& University of Helsinki, Finland \\
@@ -406,17 +406,17 @@ isbn=false]{biblatex}
 		& University of Helsinki, Finland\\
 	\end{tabular} 
 
-\vspace{2 cm}
+\vspace{1.5 cm}
 
 \copyright Maria Anastasina 2015 \\
 
 % {\fboxsep=0pt\colorbox{green!50}{\strut правильно}}
 
-\fboxsep=0pt\colorbox{yellow}{ISBN XXX-XXX-XXX-XXX (paperback)}
+ISBN TBD (paperback)
 
-\fboxsep=0pt\colorbox{yellow}{ISBN XXX-XXX-XXX-XXX (PDF, \url{http://ethesis.helsinki.fi})}\\
+ISBN TBD \\
 
-\fboxsep=0pt\colorbox{yellow}{Printing house name, Helsinki 2015}
+Helsinki 2015
 \end{singlespace}
 
 % % % % % % % % % % % % % % % % % % % % %

@@ -2,11 +2,12 @@
 %\doublespacing
 \section{Materials and Methods}
 
-The material and methods used in this study are described in details in the original publications (\ref*{DNA} -- \ref*{RRL}). This section only briefly summarizes them.\\
+The material and methods used in this study are described in details in the original publications (\ref*{DNA} -- \ref*{RRL}). This section briefly summarizes them.\\
 
 All cells used in this study were maintained in their recommended culture media containing required supplements at 37~\degree C at 5~\% CO\textsubscript{2}. The cells were regularly checked for \textit{Mycoplasma} contamination. The list of established cell lines and primary cells used in this study is present in Table \ref{tab:cells}.\\
 
 	\begin{table}[h] 
+	\setlength\extrarowheight{4pt}
 	\caption{Cells used in the study} \label{tab:cells}
 		\begin{tabu} to \linewidth {X[8,l] X[2,c]} 
 		\hline \textbf{Cells} & \textbf{Used in study} \\ 
@@ -19,10 +20,93 @@ All cells used in this study were maintained in their recommended culture media 
 		\end{tabu} 
 	\end{table} 
 
-The viruses used in this study were generated using reverse genetics system for influenza A and propagated in MDCK or Vero cells. Wild type and mutant viruses were sequenced to ensure the absence of undesirable substitutions the proper introduction of required mutations. Titers of viral stocks were determined by plaque assay on MDCK cells. The viruses used in the study are summarized in Table \ref{tab:viruses}.
+The plasmids used in the study are summarized in table \ref{tab:plasmids}. Their detailed description can be found in corresponding articles. 
 
-	\begin{table}[h!] 
-	\caption{Viruses used in the study} \label{tab:viruses}
+		\begin{longtabu} to \linewidth {X[2,l] X[2,l] X[1.5,c] X[1,c]} 
+		\caption{Plasmids used in the study} \label{tab:plasmids} \\
+		
+		\hline \textbf{Plasmid} & \textbf{Application} & \textbf{Source} & \textbf{Used in study} \\ 
+		\endhead
+		
+		\hline pHW181-PB2 &  influenza A reverse genetics & \parencite{Hoffmann2000} &\ref*{DNA}, \ref{Cterm}  \\ 
+		
+		\hline pHW182-PB1 &  influenza A reverse genetics & \parencite{Hoffmann2000} &\ref*{DNA}, \ref{Cterm}  \\
+		
+		\hline pHW183-PA & influenza A reverse genetics & \parencite{Hoffmann2000} &\ref*{DNA}, \ref{Cterm}  \\
+		
+		\hline pHW184-HA &  influenza A reverse genetics & \parencite{Hoffmann2000} &\ref*{DNA}, \ref{Cterm}  \\
+		
+		\hline pHW185-NA &  influenza A reverse genetics & \parencite{Hoffmann2000} &\ref*{DNA}, \ref{Cterm}  \\
+		
+		\hline pHW186-NP &  influenza A reverse genetics & \parencite{Hoffmann2000} &\ref*{DNA}, \ref{Cterm}  \\
+		
+		\hline pHW187-M &  influenza A reverse genetics & \parencite{Hoffmann2000} &\ref*{DNA}, \ref{Cterm}  \\
+		
+		\hline pHW188-NS &  influenza A reverse genetics & \parencite{Hoffmann2000} &\ref*{DNA}, \ref{Cterm}  \\
+		
+		\hline pHW188-NS1-RK/AA &  influenza A reverse genetics & \parencite{Hoffmann2000} &\ref*{DNA}, \ref{Cterm} \\
+		
+		\hline pHW188-NS1-202 & influenza A reverse genetics & \parencite{Hoffmann2000} &\ref*{Cterm} \\
+		
+		\hline pHW188-NS1-220 &  influenza A reverse genetics & \parencite{Hoffmann2000} &\ref*{Cterm} \\
+		
+		\hline pCMV-tag4A & transfection experiments & Agilent Technologies &\ref*{DNA} \\ 
+		
+		\hline pCMV-tag4A-NS1-WT & NS1 expression in cells & MA &\ref*{DNA} \\ 
+	
+		\hline pCMV-tag4A-NS1-RK/AA & NS1 expression in cells & MA &\ref*{DNA} \\ 
+		
+		\hline pNic28-H5N1-NS1 & NS1 protein production & Dr. Denis Kainov &\ref*{Transl} \\ 	
+		
+		\hline pNic28-H5N1-NS1-RK/AA & NS1 protein production & Dr. Denis Kainov &\ref*{Transl}, \ref*{RRL} \\ 	
+		
+		\hline pNic28-H5N1-NS1-RK/AA-25,26 & NS1 protein production & MA &\ref*{Transl} \\
+		
+		\hline pNic28-H5N1-NS1-RK/AA-48 & NS1 protein production & MA &\ref*{Transl} \\
+		
+		\hline pNic28-H5N1-NS1-RK/AA-67 & NS1 protein production & MA &\ref*{Transl} \\
+		
+		\hline pNic28-H5N1-NS1-RK/AA-25,26,48,67 & NS1 protein production & MA &\ref*{Transl} \\
+		
+		\hline pNic28-H5N1-RBD & NS1 protein production & MA &\ref*{Transl} \\ 
+		
+		\hline pNic28-H5N2-NS1 & NS1 protein production & Dr. Denis Kainov &\ref*{Transl} \\ 	
+		
+		\hline pNic28-H5N2-NS1 & NS1 protein production & Dr. Denis Kainov &\ref*{Transl} \\ 
+		
+		\hline pNic28-H5N2-NS1-delC & NS1 protein production & Dr. Denis Kainov &\ref*{Transl} \\ 
+		
+		\hline pET151-H1N1-NS1-RK/AA & NS1 protein production & Dr. Denis Kainov &\ref*{Transl} \\ 
+		
+		\hline pET151-H1N1-NS1-RK/AA-25,26 & NS1 protein production & MA &\ref*{Transl} \\ 
+		
+		\hline pET151-H1N1-NS1-RK/AA-48 & NS1 protein production & MA &\ref*{Transl} \\	
+		
+		\hline pET151-H1N1-NS1-RK/AA-67 & NS1 protein production & MA &\ref*{Transl} \\	
+		
+		\hline pET151-H1N1-NS1-RK/AA-25,26,48,67 & NS1 protein production & MA &\ref*{Transl} \\
+		
+		\hline Luciferase control DNA & mRNA synthesis & Promega &\ref*{Transl}, \ref*{RRL} \\
+		
+		\hline pGL-HCV-poly(A) & mRNA synthesis & Dr. Ilya Terenin &\ref*{RRL} \\
+		
+		\hline pGL-HCV-poly(A) & mRNA synthesis 
+		& Dr. Ilya Terenin &\ref*{RRL} \\
+		
+		\hline pGL-globin-SV40 & mRNA synthesis & Dr. Ilya Terenin  &\ref*{RRL} \\
+		
+		\hline pGL-globin-poly(A) & mRNA synthesis &  Dr. Ilya Terenin &\ref*{RRL} \\
+		
+		\hline pGL-EMCV-poly(A) & mRNA synthesis &  Dr. Ilya Terenin &\ref*{RRL} \\
+		\hline 
+	\end{longtabu} 
+
+
+The viruses used in this study were generated using a reverse genetics system for influenza A  \parencite{Hoffmann2000} and propagated in MDCK or Vero cells. Wild type and mutant viruses were sequenced to ensure the absence of undesirable substitutions the proper introduction of required mutations. Titers of viral stocks were determined by plaque assay on MDCK cells. The viruses used in the study are summarized in Table \ref{tab:viruses}.
+
+	\begin{table}[h] 
+	\setlength\extrarowheight{4pt}
+	\caption{Recombinant viruses used in the study} \label{tab:viruses}
 		\begin{tabu} to \linewidth {X[1.8,l] X[5.9,l] X[2,c]}
 		\hline \textbf{Virus} & \textbf{Description} & \textbf{Used in study} \\ 
 		\hline WSN-WT & Wild type influenza A/WSN/33 (H1N1) virus & \ref*{DNA}, \ref*{Cterm}, \ref*{RRL} \\ 
@@ -33,12 +117,38 @@ The viruses used in this study were generated using reverse genetics system for 
 		\end{tabu}
 	\end{table}
 
+The list of antibodies used in the study is present in Table \ref{tab:Abs}.
+
+\begin{table}[h] 
+	\setlength\extrarowheight{6pt}
+	\caption{Antibodies used in the study} \label{tab:Abs}
+		\begin{tabu} to \linewidth {X[5,l] X[3,l] X[2.5,c]}
+		\hline \textbf{Antibody} & \textbf{Source} & \textbf{Used in study} \\ 
+		
+		\hline primary rabbit polyclonal anti-NS1 & Prof. Ilkka Julkunen, University of Turku & \ref*{DNA}\\ [1pt]
+		 
+		\hline primary mouse monoclonal anti-phospho-eIF2$\alpha$ (Ser51) & Cell signaling & unpublished\\ [1pt]
+		
+		\hline primary goat polyclonal anti-luciferase & Promega & \ref*{Transl}\\ [1pt]
+		
+		\hline secondary  IRDye680-conjugated donkey anti-mouse & Li-Cor & unpublished \\ [1pt]
+		
+		\hline secondary  Alexa594-conjugated goat anti-rabbit & Invitrogen & \ref*{DNA} \\ [1pt]
+		
+		\hline secondary Cy5-conjugated donkey anti-goat & Abcam & \ref*{Transl} \\ [1pt]
+		
+		\hline 
+		\end{tabu}
+	\end{table}
+
 The methods used in the current study are listed in Table \ref{tab:methods}.
 
-	\begin{table}[h!] 
-	\caption{Methods used in the study} \label{tab:methods}
-		\begin{tabu} to \linewidth {X[8,l] X[2,c]}
+	\begin{longtabu} to \linewidth {X[8,l] X[2,c]}		
+		\caption{Methods used in the study} \label{tab:methods}\\
+		
 		\hline \textbf{Method} & \textbf{Used in study} \\ 
+		\endhead
+		
 		\hline Mammalian cell culture & \ref*{DNA}, \ref*{Cterm}, \ref*{RRL} \\
 		\hline Isolation of human peripheral blood mononuclear cells & \ref*{DNA}, \ref*{Cterm} \\
 		\hline DNA-mediated transformation of mammalian cells & \ref*{DNA}, \ref*{Cterm}\\
@@ -72,5 +182,5 @@ The methods used in the current study are listed in Table \ref{tab:methods}.
 		\hline Density centrifugation in sucrose gradient & \ref*{RRL} \\
 		\hline Determination of influenza A morbidity and mortality \textit{in vivo} & \ref*{Cterm} \\
 		\hline 
-		\end{tabu} 
-	\end{table}
+		\end{longtabu} 
+		
