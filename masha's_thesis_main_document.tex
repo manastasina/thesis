@@ -109,7 +109,7 @@
 % % % % % % % % % %ACRONYMS % % % % % % % % % % % %
 % % % % % % % % % % % % % % % % % % % % % % % % % %
 
-\usepackage[savewrites=true,acronym,nomain,toc]{glossaries} % a package for abbreviation list
+\usepackage[savewrites=true,acronym, nomain, toc]{glossaries} % a package for abbreviation list
 \renewcommand*{\glossaryentrynumbers}[1]{} % no page numbers in acronym list
 \renewcommand*{\glspostdescription}{} % remove a dot after acronym description
 
@@ -141,7 +141,6 @@
 \renewcommand{\@do@wrglossary}[1]{\ifbool{glo@#1@usedonlyonce}{}{\old@do@wrglossary{#1}}}
 
 \makeatother
-
 
 \makeglossaries
 
@@ -182,7 +181,7 @@
 \newacronym{RIG-I}{RIG-I}{retinoic acid inducible gene I}
 \newacronym{NLRP3}{NLRP3}{LRR- and pyrin domain-containing protein 3}
 \newacronym{DC}{DC}{dendritic cell}
-\newacronym{ASC}{ASC}{Apoptosis-associated speck-like protein containing a CARD domain}
+\newacronym{ASC}{ASC}{apoptosis-associated speck-like protein containing a CARD domain}
 \newacronym{ORF}{ORF}{open reading frame}
 \newacronym{NLS}{NLS}{nuclear localization sequence}
 \newacronym{NoLS}{NoLS}{nucleolar localization sequence}
@@ -202,8 +201,8 @@
 \newacronym{CTD}{CTD}{C-terminal domain}
 \newacronym{CARD}{CARD}{caspase recruitment domain}
 \newacronym{MAVS}{MAVS}{mitochondrial antiviral-signaling protein}
-\newacronym{IKK}{IKK}{Inhibitor of nuclear factor kappa-B kinase}
-\newacronym{JAK}{JAK}{Janus kinase}
+\newacronym{IKK}{IKK}{inhibitor of nuclear factor kappa-B kinase}
+\newacronym{JAK}{JAK}{Janus kinases}
 \newacronym{SOCS3}{SOCS-3}{suppressor of cytokine signaling-3}
 \newacronym{AP1}{AP-1}{activator protein 1}
 %\newacronym{TRIM25}{TRIM25}{tripartite motif-containing protein 25}
@@ -354,7 +353,7 @@ isbn=false]{biblatex}
 		Department of Biosciences \\
 		Faculty of Biological and Environmental Sciences\\
 		and\\
-		Graduate Program in Biomedicine\\
+		Doctoral Program in Biomedicine\\
 		University of Helsinki
 		
 		\vspace{2.5 cm}
@@ -363,7 +362,7 @@ isbn=false]{biblatex}
 		
 		\vspace{1 cm}		
 		
-		\textit{To be presented for public examination with the permission of the Faculty of Biological and Environmental Sciences of the University of Helsinki in auditorium XXX on Friday, XXX XXX 2015, at~12~o'clock~noon}
+		\textit{To be presented for public examination with the permission of the Faculty of Biological and Environmental Sciences of the University of Helsinki in the lecture hall 2402 of Biocenter 3, Viikinkaari 1 on Friday, 17\textsuperscript{th} of April, 2015, at~12~o'clock~noon}
 		
 		\vspace{1.5 cm}
 		\large \textsc{Helsinki 2015}
@@ -382,26 +381,28 @@ isbn=false]{biblatex}
 		& Structural Biology and Biophysics Program,\\
 		& Institute of Biotechnology,\\
 		& University of Helsinki, Finland\\
-	\rule[1 cm]{0pt}{0pt}	\textsc{Reviewers} & Professor Thedi Ziegler, Ph.\,D. \\
-		& Research Center for Child Psychiatry, Institute of Clinical Medicine \\ & University of Turku, \\
-		& Turku, \\
-		& Finland \\
-	\rule[0.6 cm]{0pt}{0pt}	& Docent Maija Vihinen-Ranta \\
+	\rule[1 cm]{0pt}{0pt}	\textsc{Reviewers} & Docent Thedi Ziegler, Ph.\,D. \\
+		& Research Center for Child Psychiatry \\
+	    & Institute of Clinical Medicine \\ 
+	    & University of Turku, Finland \\
+	\rule[0.6 cm]{0pt}{0pt}	& Docent Maija Vihinen-Ranta, Ph.\,D. \\
 		& Nanoscience Center, \\
 		& Department of  Biological and Environmental Science, \\
-		& University of Jyv\"{a}skyl\"{a}, \\
-		& Finland \\
-	\rule[1 cm]{0pt}{0pt}	\textsc{Opponent} & Professor Stephan Ludwig \\
+		& University of Jyv\"{a}skyl\"{a}, Finland \\
+	\rule[1 cm]{0pt}{0pt}	\textsc{Opponent} & Professor Stephan Ludwig, Ph.\,D. \\
 		& Institute of Molecular Virology \\
 		& Centre for Molecular Biology of Inflammation \\
 		& University of M\"{u}nster, Germany \\
-	\rule[1 cm]{0pt}{0pt}	\fboxsep=0pt\colorbox{yellow}{\textsc{Custodian}} & Name of the Custodian \\
-		& TBD \\
-		& TBD \\
-	\rule[1 cm]{0pt}{0pt} \textsc{Thesis Committee} & Professor Kalle Saksela \\
+	\rule[1 cm]{0pt}{0pt}	
+	\textsc{Custodian} & Professor Dennis Bamford, Ph.\,D. \\
+		& Department of Biosciences and \\
+		& Institute of Biotechnology \\
+		& University of Helsinki, Finland \\
+	\rule[1 cm]{0pt}{0pt} \textsc{Thesis Committee} & Professor Kalle Saksela, Ph.\,D. \\
 		& Department of Virology, Haartman Institute \\
 		& University of Helsinki, Finland \\
-	\rule[0.6 cm]{0pt}{0pt}	& Professor Dennis Bamford \\
+	\rule[0.6 cm]{0pt}{0pt}	& Professor Dennis Bamford, Ph.\,D. \\
+		& Department of Biosciences and \\
 		& Institute of Biotechnology \\
 		& University of Helsinki, Finland\\
 	\end{tabular} 
@@ -423,28 +424,36 @@ Helsinki 2015.
 % % % % % % TABLE OF CONTENTS % % % % % %
 % % % % % % % % % % % % % % % % % % % % %
 
-\newpage
-\thispagestyle{empty}
+%\newpage
+%\thispagestyle{empty}
+%\tableofcontents
+
+\cleardoublepage
+\pagenumbering{gobble}
 \tableofcontents
+\cleardoublepage
+\pagenumbering{roman}
 
 % % % % % % % % % % % % % % % % % % % % %
 % % % LIST OF ORIGINAL PUBLICATIONS % % %
 % % % % % % % % % % % % % % % % % % % % %
 
-\newpage
-\thispagestyle{empty}
+%\clearpage
+%\pagenumbering{roman}
 \section*{List of original publications}
 \phantomsection % allows correct anchoring of this section in toc
 \addcontentsline{toc}{section}{List of original publications} %add to toc
 
+This thesis is based on the following publications and manuscripts which are referred to in the text by their roman numerals. In addition, unpublished data will be presented.
+
 	\begin{enumerate}[I]
 
-	\item \textbf{Anastasina M*}, Le May N*, Butcher SJ, Egly JM, Kainov DE. Influenza A non-structural protein NS1 binds DNA to control host antiviral gene expression. Manuscript. (* = equal contribution). \label{DNA}	
-	\item 	Kainov DE, Müller KH, Theisen LL, \textbf{Anastasina M}, Kaloinen M, Muller CP. Differential effects of NS1 proteins of human pandemic H1N1/2009, avian highly pathogenic H5N1, and low pathogenic H5N2 influenza A viruses on cellular pre-mRNA polyadenylation and mRNA translation. \textit{J Biol Chem.} 2011 Mar 4;286(9). \label{Transl}		
-	\item \textbf{Anastasina M}, Schepens B, Saksela K, Saelens X, Kainov D. The length of C-terminus of influenza NS1 is essential for virus-host interplay. Manuscript. \label{Cterm}	
+	\item \textbf{Anastasina M*}, Le May N*, Butcher SJ, Egly JM, Kainov DE. Influenza A non-structural protein NS1 binds DNA to control host antiviral gene expression. \textit{Manuscript}. (* = equal contribution). \label{DNA}	
+	\item 	Kainov DE, Müller KH, Theisen LL, \textbf{Anastasina M}, Kaloinen M, Muller CP. Differential effects of NS1 proteins of human pandemic H1N1/2009, avian highly pathogenic H5N1, and low pathogenic H5N2 influenza A viruses on cellular pre-mRNA polyadenylation and mRNA translation. \textit{Journal of Biological Chemistry.} 2011 Mar 4;286(9). \label{Transl}		
+	\item \textbf{Anastasina M}, Schepens B, Saksela K, Saelens X, Kainov D. The length of C-terminus of influenza NS1 is essential for virus-host interplay. \textit{Manuscript}. \label{Cterm}	
 	\item \textbf{Anastasina M}, Terenin I, Butcher S, Kainov D. A technique to increase protein yield in a rabbit reticulocyte lysate translation system. \textit{Biotechniques.} 2014. 56(1):36-9. \label{RRL}
 	
-	\vspace{1.5 cm}
+	\pagebreak
 	Author's independent contribution to this work:
 	\vspace{2 mm}
 	
@@ -462,33 +471,34 @@ Helsinki 2015.
 % % % % % % % THESIS SUMMARY% % % % % % %
 % % % % % % % % % % % % % % % % % % % % %
 
-\newpage
-\thispagestyle{empty}
+\pagebreak
+%\thispagestyle{empty}
 \section*{Summary}
 \phantomsection % allows correct anchoring of this section in toc
 \addcontentsline{toc}{section}{Summary} %add to toc
 
-Viruses infect all domains of life and establish complex interactions with their hosts to warrant their own replication by subverting and hijacking multiple cellular processes. Understanding virus-host interactions is critical for controlling spread of pathogenic viruses, developing vaccines and searching for antivirals. Besides that, understanding virus-host interactions allows deciphering complex cellular processes and provides useful tools for biotechnology.
+Viruses infect all domains of life. They establish complex interactions with their hosts cells to subvert and hijack multiple cellular processes and warrant their own replication. Understanding virus-host interactions is critical to control spread of pathogenic viruses, develop vaccines and search for antivirals. Besides that, understanding virus-host interactions allows deciphering complex cellular processes and provides useful tools for biotechnology.
 
-My research is dedicated to influenza A virus, an important pathogen that infects humans worldwide, represents a constant health care threat and requires thorough control. Influenza A expresses a non-structural protein NS1 that is a key regulator of viral interactions with the host cell and an important virulence factor. Versatile functions of NS1 modulate multiple cellular functions to secure viral replication.
+My research is dedicated to influenza A virus, an important pathogen that infects humans worldwide, represents a constant health care threat and elicits continuous efforts to control the human spread of the disease. Influenza A expresses a non-structural protein NS1 that is a key regulator of viral interactions with the host cell and an important virulence factor. Versatile functions of NS1 modulate multiple cellular functions to secure viral replication.
 
-This work addresses several aspects of NS1-mediated modulation of core cellular processes. It describes the mechanism by which NS1 controls cellular transcription, studies modulation protein synthesis by NS1, and investigates the effects of NS1 protein length polymorphisms on development of antiviral responses. The presented results increase our understanding of influenza A virus-host interactions and can be further utilized in the search for antivirals and vaccine development. In addition, this work provides a biotechnological application of influenza A NS1 protein for improvement of cell-free translation system.
+This work addresses several aspects of NS1-mediated modulation of core cellular processes. We discovered that NS1 binds to dsDNA and inhibits transcription of cellular genes, thus limiting antiviral responses. We found that NS1 secures general protein synthesis and mapped several residues within NS1 that are essential for this function. Further, we showed that the length C-terminal ``tail'' of NS1 is essential for control of cellular antiviral responses and virus pathogenicity. The presented results increase our understanding of influenza A virus-host interactions and can be further utilized in the search for antivirals and vaccine development. In addition, this work provides a biotechnological application of influenza A NS1 protein for improvement of cell-free translation system.
 
 
 % % % % % % % % % % % % % % % % % % % % %
 % % % % % % % ABBREVIATIONS % % % % % % %
 % % % % % % % % % % % % % % % % % % % % %
 
-\newpage
-\thispagestyle{empty}
+\pagebreak
+%\thispagestyle{empty}
 \printglossary[type=acronym, title={Abbreviations}]
-
+\clearpage
 
 
 % % % % % % % % % % % % % % % % % % % % %
 % % % % % % % MAIN DOCUMENT % % % % % % %
 % % % % % % % % % % % % % % % % % % % % %
 
+\pagenumbering{arabic}
 \input{./review/review} %section "Review of Literature"
 	
 \input{./objectives/obj}	%section "Objectives"
