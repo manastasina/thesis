@@ -1,0 +1,299 @@
+\newpage
+\setcounter{page}{1}
+\section{Review of the literature}
+
+\subsection{Introduction}
+	
+	Viruses are seemingly simple in comparison to prokaryotic and eukaryotic cells and to multicellular organisms, comprising only a nucleic acid and a subset of proteins. Because of this simplicity they have very limited capacity to encode factors essential for their own replication and are fully dependent on the host cells. Independently on the virion structure and properties, on the nature of the viral genome and on the replication strategy, viruses have to find suitable ways to interact with the cell at each step of the arbitrary viral life cycle. For this, specific viral proteins interact with the numerous cellular factors and subvert normal cellular processes to fulfill viral needs.
+			
+	The initial interaction event between the virus with a susceptible cell occurs when the viral binds to the cell surface receptor. Be it an enveloped virus like ...., or a non-enveloped like .... the specific viral proteins interact with cellular factors to allow uncoating~--- the opening of viral capsid and delivery of genetic material to cellular cytoplasm or nucleus. 
+		
+	Independently on whether they encodes its own RNA polymerase or use the cellular enzyme, viruses set up complex interactions with cellular transcription machinery to ensure effective synthesis of its own mRNA. For example, Poliovirus and \gls{RVFV}, which use their own enzymes for RNA synthesis both shut down host transcription, although in different ways: poliovirus \gls{3cpro} cleaves \gls{TBP}~---~a core factor of cellular transcription~---, whereas \gls{RVFV} interacts with \gls{TFIIB} \parencite{Kundu2005, LeMay2004}. In contrast, the viruses that recruit host transcription machinery set up regulatory interactions with cellular transcription factors to support their own transcription, e.g. \gls{HSV} regulatory protein VP16 interacts with cellular transcription factors Oct-1 and HCF-1, empowering transcription from viral \gls{IE} promoters \parencite{Wysocka2003}.
+
+	Furthermore, being restricted in their encoding capacity viruses lack their own functional translational machinery and even \textit{Pandoravirus salinus} with its biggest known viral genomes of 2.77 \gls{Mb} obtains only few required translation factors remaining fully dependent on the protein synthesis of its Acantamoeba host \parencite{Philippe2013}. Viruses target translational machinery to secure preferential translation of viral transcripts or to shut off host translation when it is not required. For example, \gls{VSV} secures preferential translation of its mRNAs via 3' mRNA structure \parencite{Whitlow2006} and in addition ensures effective protein synthesis with the help of ribosomal protein rpL40 \parencite{Lee2013}. In contrast, \gls{CRPV} sets up an intimate interplay with host translation machinery to empower its remarkable factorless initiation of translation \parencite{Bushell2002}. and the  
+	
+	alternative ways to initiate translation 
+	 
+	
+	They further use cellular processes for assembly and transport of new virions (more info here). Finally, a number of cellular proteins are involved in viral exit, whether it is accompanied by cell lysis or not (examples here).
+	
+	The cells are not inert and are able to recognize the presence of the virus quickly and respond with a robust induction of innate immune responses. No successful viral replication would be possible without a proper control of these responses and independently of the specific strategies of their replication viruses encode specific factors that target immune responses, adding an additional level of complexity of virus-host interactions. Specific proteins that target multiple cellular processes to prevent development of antiviral responses are found across all viral families. This adds another level of complexity to virus-host interactions. 
+
+	The number of strategies developed by the viruses is overwhelming. Although we were able to deduce the strategies of viral life cycle from the nature of viral genome already in 1971 \parencite{Baltimore1971}, the exact mechanisms of viral replication are obviously so diverse and complicated up until now we strive to understand them. We study virus-host interactions largely in attempt to fight numerous threats that humankind faces from pathogenic viruses. These involve viral surveillance, development of drugs and vaccines. We also study virus-host interactions as viruses has proven many times to be a great tool to understand cell biology, starting from discovery of DNA replication in .... up to recent .... . Finally, understanding of the mechanisms behind virus-host interactions brings us novel applicable tools widely used in biotech (examples). Although a great deal of mechanisms has been already discovered, the amount information that we get now is growing exponentially and majority of discoveries is perhaps still ahead. 
+		
+\subsection{Influenza A virus: an overview}
+	
+	This work is dedicated to influenza A virus, a member of  \textit{Orthomyxoviridae} family. Influenza A viruses are commonly classified based on their surface antigens \gls{HA} and \gls{NA}. All 16 subtypes of \gls{HA} and all 9 subtypes of \gls{NA} are found in wild birds which, apparently, represent the natural reservoir of influenza A virus \parencite{Stallknecht2007}. However, certain subtypes of the virus can also infect domesticated birds and multiple species of mammals, including humans. Whereas influenza A virus is asymptomatic in its natural hosts, it can cause mild to severe intestinal infections in poultry and asymptomatic to severe respiratory infections in mammals \parencite{Webster1992a}. 
+	
+	Influenza A virus genome is composed of a \gls{(-)ssRNA} \parencite{Palese1977}. It is replicated with the viral \gls{rdrp} which is known to be error-prone and is estimated to produce between $1.5$ and $7.5\times10^5$ misincorporations per nucleotide. Because \gls{rdrp} also lacks proofreading activity these misincorporations can not be repaired and on average one mutation appears the viral genome after each replication cycle \parencite{Drake1993, Parvin1986}. The gradual accumulation of mutations in viral proteins is referred to as antigenic drift. In addition, the viral genome is segmented: each virion contains eight RNA molecules that encode viral proteins \parencite{McGeoch1976}. The genomic segments can reassort during the co-infection of the same cell with distinct influenza A viruses giving rise to progeny virions that contain segments derived from both ``parental'' viruses \parencite{Desselberger1978}. Such major changes in the virus are referred to as antigenic shift. Antigenic drift and antigenic shift are the key drivers of viral evolution \parencite{Forrest2010}.
+		
+	Although the first human influenza A virus was isolated in 1933 \parencite{Smith1933} and the first confirmed influenza A pandemic occurred the 1918 \parencite{Taubenberger1997}, numerous records indicate that humankind has been facing influenza epidemics and probably also pandemics for at least several centuries \parencite{Potter2001}. There is molecular evidence for influenza A \gls{HA} subtypes 1, 2, 3, 5, 7 and 9 can infect humans, the  majority of human influenza A infections are caused by H1 and H3 viruses.
+	
+	Circulating strains of influenza A cause seasonal infections in humans. In most countries these infections result in annual epidemics which may affect up to 10 \% of the population worldwide and result in up to $500000$ deaths (\hyperlink{www.who.in}{World Health Organization}). 
+	
+	In addition to these annual epidemics, global pandemics can occur when humans are infected with the viruses to which they are immunologicaly na\"{i}ve. Although influenza A pandemics are relatively rare events, humankind has faced three major pandemics in XX century and already one in the XXI century \parencite{Lagace-Wiens2010, Fineberg2014}.  Whereas the mortality of seasonal influenza is modest, the mortality of pandemic influenza is unpredictable and can vary: for example, the mortality during H1N1 pandemic in 2009 was only below 0.5~\%, but the mortality during the H5N1 pandemic in 1997 was close to 60~\% \parencite{Forrest2010, Noah2013}. In addition, influenza imposes enormous economic burden both to health care and to agriculture \parencite{Szucs1999, Noah2013}. 
+	
+	Because of the limited antivirals and vaccines efficacy due to antigenic drift and because of a constant risk for new to control influenza A. These efforts require thorough virus surveillance based on understanding of viral ecology, improvement of existing vaccines and development of effective antivirals which require comprehensive understanding of virus-host interactions.  
+	
+\subsection{Influenza A virus organization and replication cycle}
+
+	Influenza A virions are pleiomorphic, i.e. their shapes are not uniform and can be spherical, kidney- or rod-shaped with the average size of 100--150 nm \parencite{Fujiyoshi1994}. The outer shell of the virions is composed of the host-derived lipid bilayer in which viral \gls{HA}, \gls{NA} and \gls{M2} are incorporated. This shell is underlined with the viral \gls{M1} \parencite{Harris2006}. Each virion encompasses genomic RNA segments packed in specific structures referred to as \gls{vRNP}. They represent supercoiled ring-like structures in which paired 5' and 3' ends of the viral RNA are associated heterotrimetic viral polymerase complex and the rest of the RNA is densely covered with \gls{NP} \parencite{Arranz2012}. In the virion the \gls{vRNP}s are associated with the \gls{M1} protein \parencite{Rees1982, Ye1999}. Eight genes of all influenza A viruses encode 10 essential viral proteins: \gls{HA}, \gls{NA}, \gls{M1}, \gls{M2}, \gls{NP}, \gls{PB1}, \gls{PB2}, \gls{PA}, \gls{NS1}, and \gls{NEP} \parencite{Lamb1983}. In addition, some influenza A strains may encode accessory proteins PB1-F2, PB1-N40, PA-X, PA-155 and PA-182. Whereas \gls{HA}, \gls{NA}, \gls{M1}, \gls{M2}, \gls{NP}, \gls{PB1}, \gls{PB2}, \gls{PA} and \gls{NEP} are structural components of viral particle, \gls{NS1}, PB1-F2, PB1-N40, PA-X, PA-155 and PA-182 are considered to be non-structural and are involved in regulation of virus-host interactions \parencite{Chen2001,Hale2008b,Wise2009,Jagger2012,Muramoto2013}.
+	
+	The viral replication cycle begins when the viral \gls{HA} binds to the specific virus receptor on cell surface. The key, but possibly not the only receptors for influenza A virus are sialic acids linked to cellular surface glycoproteins or glycolipids \parencite{Skehel2000, Stray2000, Martin1998}. \gls{HA} molecules of avian influenza A viruses recognize $\alpha$-2,3-linked sialic acids and \gls{HA} of human influenza A viruses recognize $\alpha$-2,6-linked sialic acids \parencite{Connor1994, VanRiel2010}. After receptor binding the viruses are endocytosed via clathrin-dependent or clathrin- and caveolin-independent routes and are transferred towards the perinuclear space in endosomes \parencite{Dourmashkin1974, Matlin1981, Sieczkarski2002, Lakadamyali2003}. Acidification of late endosomes in perinuclear space triggers two essential events that allow virus uncoating and delivery of \gls{vRNP}s to the cytoplasm. Firstly, low pH mediates the conformational change in the \gls{HA} enabling fusion of viral and endosomal membranes \parencite{Carr1993}. Secondly, acidification of the virus interior leads to dissociation of \gls{M1} from the \gls{vRNP}s which is required for their successful import in the nucleus \parencite{Bui1996}. 
+	
+	In the nucleus the \gls{vRNA}s are transcribed \textit{in cis} by the viral polymerase associated with the \gls{vRNP} \parencite{Moeller2012}. Synthesis of viral mRNA is initiated using a 10--13 nucleotide long primers with \gls{5meG} \parencite{Beaton1981, Plotch1981a}. These primers are derived via a process of ``cap-snatching'' during which the \gls{5meG} cap structures on cellular mRNAs are recognized and bound by \gls{PB2} subunit of viral polymerase \parencite{Guilligay2008} and further endonucleolytically cleaved by viral \gls{PB1} and \gls{PA} \parencite{Li2001, Dias2009, Yuan2009}. The resulting primers provide \gls{5meG}-caps for viral transcripts and 3'-OH ends enabling mRNA chain elongation by \gls{PB1} \parencite{Poch1989}. The synthesis of viral mRNA terminates after reiterative copying of 5--7 uridines located at the 5' end of vRNA, resulting in appearance of 150--200 adenine bases at the 3' end of viral mRNA \parencite{Plotch1977, Robertson1981d, Poon1999}. Thus, the viral mRNA is capped and polyadenylated being structurally indistinguishable from cellular transcripts. They are exported via the cellular RNA export machinery to the cytoplasm where they are translated \parencite{Chen2000}. Many of the synthesized viral proteins  shuttle back to the nucleus, where they facilitate production of new \gls{vRNP}s and their export to the cytoplasm \parencite{Greenspan1988, Neumann1997, Huet2010, Wang2013}. 
+	
+	Replication of influenza A viral genomes occurs through two arbitrary steps. First, \gls{cRNP}s containing positive single-stranded cRNA are produced. Next, these \gls{cRNP}s serve as templates for production of progeny \gls{vRNP} \parencite{Elton2005}. In contrast to mRNA, the synthesis of both cRNA and vRNA is carried out \textit{in trans} by the free viral polymerase available in the nucleus after synthesis and import of new viral proteins \parencite{Jorba2009, Moeller2012}. Moreover, initiation of both cRNA and vRNA synthesis does not require cell- or virus-derived primers and occurs \textit{de novo} resulting in the presence of triphosphates at their 5' ends \parencite{Hay1982, Zhang2010}. The progeny \gls{vRNP}s are assembled in the nucleus and contain exact copies of parental vRNA, a single viral polymerase and multiple copies of \gls{NP}. They can be transcribed and later exported from the nucleus for virion assembly \parencite{Resa-Infante2011}. 
+	
+	The assembly of the virion and budding occurs at the cellular plasma membrane and requires transport of essential components of progeny virions to the site of assembly. The \gls{vRNP}s in a complex with \gls{M1} and \gls{NEP} are exported from the nucleus via cellular CRM1/exportin-1 pathway and then are transported to the site of budding via cellular microtubules \parencite{Akarsu2003, Momose2007, Kawaguchi2012}. Viral envelope proteins (\gls{HA}, \gls{NA} and \gls{M1}) obtain specific sorting signals for their delivery to the budding site \parencite{Hughey1992, Kundu1996, Tall2003} and are transported there through the Golgi network \parencite{Daniels-Holgate1989}. The virion assembly is localized to specific  cholesterol- and sphingolipid-enriched regions of plasma membrane referred to as lipid rafts \parencite{Scheiffele1999}. The budding requires \gls{M1}, \gls{HA} for initiation of cellular membrane curvature, coordinated interaction of \gls{M1} and \gls{vRNP}s for packaging of viral genomes and \gls{M2} for bud scission \parencite{Nayak2009a, Rossman2011}. Finally, the viral \gls{HA} cleaves the sialic acids are cleaved off the cellular surface releasing new virions that can initiate another infection cycle \parencite{Barman2004}.
+
+	
+	\subsection{Host factors involved in IAV replication cycle}
+	
+	Because of the limited capacity of influenza A virus to encode its own proteins, its effective replication relies on cellular factors. A large number of such factors have been recently identified using yeast two-hybrid assay, genome-wide RNAi screening, and proteomic approaches \parencite{Mayer2007, Brass2009, Shapira2009, Hao2008, Karlas2010, Konig2010, Shaw2011, Song2011}. At least 128 of these factors were identified in two or more screens simultaneously. Functional clustering of these factors revealed their involvement in essentially all stages of viral replication \parencite{Watanabe2010}. 
+	
+	Thus, the clathrin-mediated endocytosis of influenza A requires cellular clathrin epsin-1 \parencite{Chen2008a} and efficient endosomal transport depends on cellular GTPases Rab5 and Rab7 \parencite{Sieczkarski2003}. Fusion of viral and endosomal membranes is dependent on \gls{vATPase} that acidifies endosomal interior and several subunits of this macromolecular complex have been identified as host factors required for influenza A replication \parencite{Watanabe2010}. 
+	
+	Nuclear import of \gls{vRNP}s occurs in an active way and requires the interaction of \gls{NP} with importin $\alpha$1 or importin $\alpha$5 \parencite{Cros2005}. Although influenza A RNAs are transcribed by its own \gls{RdRp}, it interacts with cellular DNA-dependent RNA polymerase II presumably to facilitate cap snatching \parencite{Engelhardt2005}. Furthermore, influenza A utilizes cellular splicing machinery to process its mRNAs derived from segments 7 and 8 \parencite{Dubois2014} and cellular nuclear export machinery to deliver its transcripts to the cytoplasm \parencite{York2013}. As the virus encodes none of the translation machinery components, its protein synthesis completely depends on the host translation machinery and the efficacy of viral protein production is secured via the tight interaction between viral \gls{NS1} and cellular translation factors \parencite{DelaLuna1995, Burgui2003, Aragon2000}.
+	
+	Effective synthesis of \gls{vRNP}s requires interaction of \gls{RdRp} with cellular minichromosome maintainance complex \parencite{Kawaguchi2007}, serine/threonine phosphatase 6 \parencite{York2014}. The export of \gls{vRNP}s is dependent on the interaction of \gls{M1}-\gls{vRNP} with the cellular nuclear export receptor CRM1, which presumably occurs via viral \gls{NEP} \parencite{Brunotte2014} and their further transport to the budding site requires interaction of viral \gls{NP} with cellular Rab11 GTPase \parencite{Eisfeld2011}. Finally, assembly of the virion at the budding site and bud formation requires functional actin microfilaments and cellular energy sources \parencite{Nayak2004}. 
+	
+	The above mentioned interactions give just few examples of a complex interactome that the virus establishes during infection: accession of host-pathogen interaction database  \parencite{Kumar2010} yielded published associations of viral proteins with over 400 host factors. Importantly, viral replication occurs under cellular antiviral responses and therefore to securing it is not limited to recruiting host factors for essential stages of viral replication cycle, but also expands to counteraction of virus detection by the cell and its downstream events. 
+	
+	
+	\subsection{Host responses to Influenza A infection}
+	
+	The hosts of influenza A virus have evolved defensive mechanisms to protect themselves from infections by preventing viral entry in the cell, reducing the viral burden or diminishing the negative consequences of infection. These mechanisms are realized through three lines of host defense: the intrinsic physicochemical barriers, the innate immunity and the adaptive immunity.
+	
+	In mammals influenza A is transmitted mainly through aerosols and droplets and enters the host through the respiratory tract \parencite{Brankston2007}. The first line of antiviral defense in the respiratory tract is represented by the airway mucus, which consists mainly of glycoproteins and antimicrobial and antiviral substances and is an essential barrier for virus infection \parencite{Thornton2008, Nicholas2006}. The viruses that penetrate the airway mucus barrier initiate infections of the respiratory tract epithelial cells and can also spread to immune cells of the respiratory tract, mainly macrophages and \gls{DC} \parencite{Perrone2008, Bender1998}. Infection of susceptible cells with influenza A results in a rapid detection of the pathogen and induction of innate immune responses, which include activation of antiviral gene expression and production effector molecules that regulate antiviral signaling in the infected cell and enable effective communication between infected and immune cells \parencite{Iwasaki2014}. The efficiency of these processes is critical for restriction of viral burden and also for informing the adaptive immunity \parencite{Iwasaki2010}. Activation the adaptive immunity represents the third line of defense which is essential for clearance of the infection site and generation of immune memory. 
+	
+	The proper establishment of cellular responses to influenza A virus infection is critical for the host ability to restrict viral replication and recover from infection. Although it involves a complex network of events that are hard to tackle, in recent years substantial progress has been made towards our understanding of critical processes that regulate virus detection, antiviral signaling and activation of immune-related genes.
+	
+		\subsubsection{Detection of the virus}
+		
+		Eukaryotic cells evolved the way to distinguish between ``self'' and ``non-self'' via expression of specific detection molecules called \gls{PRR} \parencite{Janeway2002}. These \gls{PRR}s initiate downstream signaling events activating innate immune responses upon recognition of specific molecular signatures produced by invading microorganisms which are known as \gls{PAMP} \parencite{Janeway1989}.The current paradigm of innate immunity to influenza A virus assumes that three types of \gls{PAMP}s are produced by influenza A virus during its replication. These \gls{PAMP}s are single- and double-stranded viral RNA and 5' triphosphates generated during viral genome synthesis by \gls{RdRp} \parencite{Guillot2005, Hornung2006, Kato2006, Lund2004}. They are recognized by three major classes of cellular \gls{PRR}s: \gls{NLRP3}, \gls{TLR}, and \gls{RIG-I} \parencite{Iwasaki2014}.
+		
+		\gls{NLRP3} is expressed in lung and bronchial epithelial cells, monocytes, macrophages and \gls{DC}s \parencite{Guarda2011, Kim2014} and is constitutively present in inactive form in the cytoplasm. During influenza A infection \gls{NLRP3} is activated by sensing viral \gls{ssRNA} or proton flux mediated by viral \gls{M2} in trans Golgi network \parencite{Thomas2009, Ichinohe2010, Allen2009}. Virus-mediated activation and oligomerization of \gls{NLRP3} leads to formation of inflammasome~--- a multiprotein complex that includes \gls{NLRP3}, \gls{ASC} and pro-caspase 1 \parencite{Tschopp2010}. Inflammasome is required for proteolytic self-activation of pro-caspase 1, which afterwards cleaves IL1 $\beta$ and IL18 precursors.
+		
+		Three different \gls{TLR} class members are involved in detection of influenza-derived \gls{PAMP}s: \gls{TLR}3 recognizes dsRNA, \gls{TLR}7 and \gls{TLR}8 recognize ssRNA \parencite{Iwasaki2014}. 
+		
+		\gls{TLR}3 is constitutively expressed in pulmonary and airway epithelial  cells and in \gls{DC}s \parencite{Guillot2005, Schulz2005, Ioannidis2013}. It is intracellular and has been initially shown to recognize dsRNA and indcuce \gls{IFN} production in response to it \parencite{Alexopoulou2001, Guillot2005}. Although influenza A viruses do not produce detectable amounts of dsRNA intermediates during their replication due to activity of cellular RNA helicase UAP56 \parencite{Wisskirchen2011}, expression \gls{TLR}3 is upregulated and its signaling is activated in response to replicating influenza A virus \parencite{Guillot2005}. In \gls{DC}s, \gls{TLR}3 signaling is activated upon phagocytosis of infecting material, suggesting localization of \gls{TLR}3 in the endosome \parencite{Schulz2005}. 
+				
+		\gls{TLR}7 is expressed by airway epithelial cells and \gls{DC}s and plasmocytoid \gls{DC}s \parencite{Ioannidis2013, Lund2004}. \gls{TLR}7 can be activated by ssRNA and is proposed to recognize genomic vRNA of inlfuenza A virus in the endosome \parencite{Diebold2004}. However, as in the genomic vRNA is packaged in \gls{vRNP} structures and encapsidated in the virion, the details of its recognition by \gls{TLR}3 are unclear \parencite{Diebold2004}. Neither is known whether any specific structures on vRNA are sequired for \gls{TLR}7 activation, as it seems to be both sequence- and structure unspecific, as it readily recognizes both ``self'' and ``non-self'' RNA and it is proposed that its endosomal localization if the way to avoid binding ``self'' RNA and secure binding of vRNA \parencite{Diebold2004}. Importantly, of all \gls{TLR}s that recognize influenza A virus, only \gls{TLR}7 seems to be critical viral recognition \parencite{Lund2004}.
+			TLR7 is not expressed in A549 -- %J. Tissari, J. Sire ´n, S. Meri, I. Julkunen, S. Matikainen, IFN-a enhances	TLR3-mediated antiviral cytokine expression in human endothelial and epithelial cells by up-regulating TLR3 expression, J.
+		
+		\gls{TLR}8 is also expressed in endosomal compartments of the cells, but unlike other \gls{TLR}s it has been do far only found in macrophages and monocytes \parencite{Ablasser2009}. \gls{TLR}8 is activated in response to ssRNA and 5' triphosphates \parencite{Ablasser2009}. Its expression is activated upon influenza A infection and leads to production of \gls{IL}-12, however the distinct role of \gls{TLR}8 in regulation of innate immunity is yet to be determined \parencite{Lee2013a}.
+		 
+		The predominant class of cytosolic PRRs are \gls{RLR}~--- a group of helicases that named after its representative \gls{RIG-I}.  \gls{RLR}s are constitutively present in low amounts in multiple cell types, but their most prominent location is airway epithelium \parencite{Bogefors2011} where they play essential role in detection of airborne pathogens. This group of \gls{PRR}s includes three proteins: \gls{RIG-I}, \gls{MDA5} and \gls{LGP2} \parencite{Kang2004, Yoneyama2004, Yoneyama2005}. They are structurally similar and contain RNA-binding \gls{CTD} and a DExD/H box helicase domain \parencite{Cui2008, Takahasi2009}. \gls{RIG-I} and \gls{MDA5} also contain two consecutive N-terminal \gls{CARD} that mediate signaling \parencite{Yoneyama2004, Kang2004}. \gls{RLR}s recognize dsRNA, generated by  and \gls{RIG-I} in addition to that is also able to recognize ssRNA with 5' triphosphates \parencite{Cui2008}. 
+		
+		In the cytoplasm \gls{RIG-I} is normally present in inactive autorepressed state in which its \gls{CARD}s are sequestered by the helical domain, preventing non-specific induction of \gls{RIG-I} downstream signaling \parencite{Kowalinski2011}. Upon sensing its ligands by \gls{CTD}, \gls{RIG-I} undergoes conformational rearrangement which liberates \gls{RIG-I} \gls{CARD}s for downstream signaling \parencite{Kowalinski2011}. Effective signaling induction by \gls{RIG-I} requires its ubiquitination by E3 ubiquitin ligase TRIM25 and RIPLET or binding to free polyubiquitin chains generated by TRIM25, and both functional TRIM25 and RIPLET are essential for \gls{RIG-I} signaling in vitro and in vivo \parencite{Gack2007, Oshiumi2010, Zeng2010}. The modified \gls{RIG-I} forms oligomers \parencite{Patel2013}, leading to additional conformational rearrangements that enable interaction with its  mitochondrial adapter \gls{MAVS} \parencite{Kawai2005, Seth2005}. For this, \gls{RIG-I} is targeted to mitochondria in a ``translocon'' complex containing TRIM25 and mitochondrial targeting chaperone 14-3-3 $\epsilon$ \parencite{Liu2012}. Interaction with \gls{RIG-I} leads to oligomerization of \gls{MAVS} and formation a scaffold for multi-kinase signaling complex which eventually results in activation of transcription factors IRF3, AP-1 and \gls{NFkB} and their translocation to the nucleus \parencite{McWhirter2005}.
+
+		%Recent studies with a pathogenic influenza A virus demonstrated impaired neutrophil and CD4+ T cell recruitment to the infected respiratory tract of IL-1R1−/− mice, greatly diminished lung inflammatory infiltrates, reduced IgM levels in both serum and at mucosal sites and decreased activation of CD4+ T “helpers” in secondary lymphoid tissue (Schmitz et al., 2005). These changes were not, however, associated with protection: the IL-1R1−/− mice were ultimately more susceptible, though lung virus titers were only moderately increased (Schmitz et al., 2005). Also, IL-18−/− mice inoculated intranasally (i.n.) with the mouse-adapted influenza A/PR/8/34 (PR8) virus showed increased mortality with enhanced virus growth, massive infiltration of inflammatory cells, and elevated NO production over the first 3 days following respiratory challenge (Liu et al., 2004). Using a less virulent influenza challenge, IL-18−/− deficiency was associated with decreased CD8+ T cell cytokine production (Denton et al., 2007). Furthermore, the administration of IL-18 was shown to protect against herpes simplex virus and vaccinia virus (Liu et al., 2004). Thus, while both IL-1β and IL-18 are clearly involved in the innate response, they seem more associated with survival than with lethal immunopathology, at least when the challenge is with viruses of moderate pathogenicity.
+		
+		
+		In addition to their activation by sensing \gls{PAMP}s, \gls{RIG-I}, \gls{TLR}3 and \gls{NLRP3} can all be activated by type I interferons via a positive feedback loop \parencite{Pothlichet2013}.
+		
+		
+		\textit{Start with explaining what are PAMPs and PRRs. Then discuss what are the PAMPS for Influenza, and cellular PRRs for IAV detection. Mention that IAV replication cycle has stages in teh cytoplasm and in the nucleus. Discuss TLRs in the cellular membrane and the endosome, RLRs, NLRs in the cytoplasm.}
+		
+		Detection of the virus by TLR3 activates so-called ``proinflammatory'' responses\parencite{LeGoffic2007}to IAV that result in production of ILs 6,8, 12p40/p70, RANTES and are required for establishment of inflammation. proliferation of CD8+ CTLs. Detection of the virus bt RIG-I results in ``antiviral'' signaling \parencite{LeGoffic2007} whereby production of type I IFNs activates expression of interferon-stimulated genes, which products modulate cellular processes to restrict viral replication.
+		
+		\subsubsection{Induction of type I interferons}
+		
+		\textit{Describe the mechanisms of primary antiviral response establisment and produtioon of IFNs.}
+		
+		type I IFNs stimulate DCs to present antigens to CD4+ and CD8+ T-cells
+		
+		\subsubsection{Activation of interferon-stimulated genes}
+		
+		\textit{Discuss induciton of interferon-stimulated genes and their role in counteracting viral replication: RNASeL/OASL, NOS, PKR.}
+		
+		%ISG15 It is made up of two ubiquitin-like domains, in which the C-terminal LRLRGG motif is responsible for its conjugating (ISGylation) onto target proteins (23, 24). Formation of this isopeptide bond is catalyzed consecutively by a series of inducible enzymes:E1activating enzymeUbe1L(25),E2 conjugating enzyme UbcH8 (26, 27), E3 ligase Herc5 or EFP (28– 30), and deconjugating enzyme UBP43 (31). Unlike ubiquitination, ISGylation typically does not promote degradation of the target proteins. A couple of proteomics studies have identified .100 cellular proteins as potential targets of ISGylation (32–35). These proteins cover a wide spectrum of biological processes, including transcriptional regulation, signal transduction, inflammation, and control of cell growth. Notably, ISG15 and its conjugation system (E1, E2, and E3) were overexpressed in these proteomics studies, which made the observations possibly artificia
+		
+		\subsubsection{Establishment of cellular antiviral state}
+		
+		what happens to cellular processes when the cell is infected
+		link to transcription, translation 
+		why ns1 needs to control all this
+		
+	
+		inhibition of protein synthesis in infected cell -- PRK link ot IFNs type I
+		
+		\textit{Describe etablishment of cellular antiviral state and how antiviral state affects key cellular functions preventing virus replication. Possibly (?) discuss intercellulaur signalling and attraction of immune cells to the site of infection --- not sure yet about this, might be too much and confusing.}
+		
+	\subsection{Viral means to counteract antiviral responses}
+	
+	NA cleaves sialic acids in mucus to help virus go through
+	
+	Influenza PB1-F2 with a serine at position 66 can inhibit type
+	I interferon production by binding and inactivating the mitochon- drial antiviral signaling protein (MAVS) (Varga et al., 2011).
+	
+	The PB1-F2 protein is also associated with the induction of apoptosis and has a synergistic effect on the function of influenza virus polymerases PA and PB2 (for review see Conenello et al., 2011). The latter can inhibit type I interferon production by associating with MAVS, sim- ilar to PB1-F2 (Graef et al., 2010)
+	
+	PB2 can also bind and inhibit the interferon promoter stimulator 1 (IPS-1) that normally promotes IFN-?production (Iwai et al., 2010).
+	
+	
+		\textit{Discuss here involvement of various viral proteins in counteracting development of antiviral responses (mention mask/hit strategies). State the critical role of NS1 and its many functions in teh cell that are necessary to secure viral replication.}
+			
+	\subsection{NS1 protein}
+		
+		The majority of proteins encoded by the influenza A genome are required for the formation of the virion and are referred to as structural proteins. However, when the influenza genome was mapped, the viral protein not present in the virion, but expressed in high quantities in infected cells was discovered \parencite{Ritchey1976}. This protein was referred to as viral non-structural protein and is abbreviated as \gls{NS1}. Initial studies indicated that \gls{NS1} is essential for viral replication \parencite{Koennecke1981} and further investigations proved that it is a versatile viral protein which is a key regulator of influenza A virus-host interactions \parencite{Ayllon2015}.
+		
+		\subsubsection{NS1 synthesis and localization}
+		
+		The mRNA of \gls{NS1} is generated by collinear transcription of 8th genomic segment. About 10\% of transcripts are spliced and generate the mRNA of another viral protein, \gls{NEP} \parencite{Lamb1980}, which shares first 10 amino acids with \gls{NS1} \parencite{Inglis1979, Lamb1979, Lamb1980}. As \gls{NS1} is not found in virions, it appears in infected cells only after viral transcripts have been generated and translated. Although intracellular localization of \gls{NS1} may vary depending on its abundance, the virus isolate, cell type and polarity, and time post infection, the major fraction of \gls{NS1} is localized in cellular nucleus, but it is also present in the cell cytoplasm\parencite{Melen2007, Melen2012, Newby2007, Li1998, Greenspan1988}. 
+		
+		Generally, proteins of up to ~60 kDa can be imported in the nucleus by passive diffusion \parencite{Macara2001, Wang2007} which does not require specific \gls{NLS}. \gls{NS1} is a relatively small protein and its molecular mass is only ~26 kDa \parencite{Ward1994}, however, its nuclear import occurs in an active way. Depending on the virus subtype, \gls{NS1} can contain one or two \gls{NLS}s which mediate interaction with cellular importin-$\alpha$ \parencite{Melen2007}, thus securing rapid nuclear import of \gls{NS1} \parencite{Privalsky1981}. The monopartite \gls{NLS}1 is located close to the protein N-terminus, involves aa R35, R38 and K41, and is extremely conserved across most of influenza A isolates. The bipartite C-terminal NLS2 is present in a subset of viral strains expressing extended 237 aa \gls{NS1}. It is located around aa 219--237 and also serves as a \gls{NoLS} \parencite{Melen2007, Melen2012}. Cytoplasmic localization of \gls{NS1} seems to occur via the \gls{NES} which lies within residues 138--147 \parencite{Li1998}. This \gls{NES}, however, is masked by adjacent residues 148--161 and its activation requires ``unmasking'' which presumably occurs via the conformational change upon interaction of \gls{NS1} with unidentified protein partner(s). 
+		
+		\subsubsection{Post-translational modifications of NS1}
+		
+		In infected cells a significant fraction of \gls{NS1} can be post-translationally modified. These modifications include phosphorylation, linkage of \gls{SUMO} or \gls{ISG15}.
+		
+		Initial studies indicated that a large portion of \gls{NS1} is phosphorylated in infected cell and this phosphorylation occurs in the nucleus \parencite{Privalsky1981}. Four residues within \gls{NS1} may be phosphorylated~--- S42, S48, T197 and T215~--- although their phosphorylation may be virus subtype specific \parencite{Petri1982}. Phosphorylation of \gls{NS1} at S48 by protein kinase A, at T197 by unidentified kinase and at T215 by CDK5 and ERK2 kinases does not seem to affect viral replication and the role of these modifications needs further elucidation \parencite{Hale2009, Hutchinson2012, Hsiang2012}. Phosphorylation at S42 by protein kinase C alpha is proposed to attenuate viral replication presumably via impairing nucleic acid binding function of \gls{NS1} \parencite{Hsiang2012}.
+		
+		\gls{NS1} can be modified by linkage of \gls{SUMO}~--- a small regulatory protein that affects activity, stability, localization and interactions of its targets \parencite{Johnson2004, Pal2010a}. \gls{NS1} extensively interacts with cellular \gls{SUMO}ylation system in the nucleus and can be modified with three \gls{SUMO} isoforms~--- \gls{SUMO}1 and \gls{SUMO}2/3 \parencite{Pal2011, Santos2013a}. This modification is isolate-specific: \gls{NS1} from some, but not all H5N1, H9N2 and H1N1 influenza A viruses can be \gls{SUMO}ylated \parencite{Xu2011}. \gls{SUMO}ylation sites seem to be localized in the NS1 C-terminal lysines 219 and 221 \parencite{Xu2011}. So far only two studies have addressed the functional role of \gls{NS1} \gls{SUMO}ylation. They indicate that this modification regulates \gls{NS1} stability, optimal levels of \gls{NS1} \gls{SUMO}ylation regulate abundance of \gls{NS1} dimers and trimers and may facilitate immunomodulatory functions of \gls{NS1} \parencite{Xu2011, Santos2013a}. 
+		
+		Another modification of \gls{NS1} that occurs in infected cells is conjugation of \gls{ISG15}, a small ubiquitin-like protein that is produced in response to various stress stimuli including influenza A infection \parencite{Pitha-Rowe2007, Sadler2008, Hsiang2009}. \gls{ISG15} conjugation to \gls{NS1} by its \gls{IFN}-induced ligases Ube1L, UbcH8 and Herc5 occurs primarily at lysines 41, 126, 217 and 219 \parencite{Zhao2010, Tang2010a}. It inhibits \gls{NS1} dimerization, interaction with \gls{PKR} and with importin $\alpha$, alleviates \gls{NS1}-mediated inhibition of cytokine produciton by infected cell and attenuates viral growth kinetics \parencite{Zhao2010, Tang2010a}. Like other modifications of \gls{NS1}, ISGylation is strain-specific: avian \gls{NS1}s differ from human in their ISGylation profiles \parencite{Tang2010a}. The virus counteracts this mechanism of celluar response via acquisition of K41R mutation in NS1 that inhibits ISGylation without compromising \gls{NS1} functions \parencite{Zhao2013}.
+	
+		
+		\subsubsection{Structure of NS1}
+		
+		\gls{NS1} is a relatively small protein which length is 202-230 depending on the virus strain \parencite{Hale2008b}. It is subdivided in four regions: the N-terminal \gls{RBD}, the inter-domain linker, the \gls{ED} and a disordered C-terminal ``tail'' \parencite{Hale2014}. Several structural studies have provided detailed information organization of \gls{NS1} domains, the full-length protein and on the structural polymorphisms of \gls{NS1}s from different viral sybtypes \parencite{Chien1997, Liu1997a, Wang1999a, Bornholdt2006, Yin2007a, Hale2008c, Cheng2009, Xia2009, Kerry2011, Carrillo2014}. As implied by their names, the \gls{RBD} of NS1 interacts with the RNA, whereas \gls{ED} accomodates the majority of interaction sites with \gls{NS1} cellular partners \parencite{Hale2008b}.
+		
+		\gls{RBD} comprises first 73 N-terminal aa of \gls{NS1} \parencite{Qian1995a, Yin2007a}. It is largely helical, and about 80\% of its residues are organized into three positively charged $\alpha$-helices \parencite{Qian1995a, Liu1997a}.\gls{RBD} itself forms highly stable six-helical fold dimers in which anti-parallel $\alpha$-helices 2 and 2' of corresponding monomers form the the groove in which RNA can be accommodated \parencite{Chien1997, Wang1999a}. \gls{RBD} dimerization is required for \gls{NS1} ability to interact with RNA \parencite{Wang1999a}.
+		
+		Inter-domain linker in most cases is comprised of residues 74-84, however its length may vary depending on the viral subtype, thus contributing to \gls{NS1} length and structural polymorphism \parencite{Bornholdt2006, Carrillo2014, Kerry2011}.
+		
+		\gls{ED} in most viral subtypes encompasses residues 88--202 \parencite{Hale2014}. It comprises seven $\beta$-strands and three $\alpha$-helices and alike \gls{RBD} can homodimerize independently \parencite{Bornholdt2006, Hale2008c, Xia2009}. The dimerization occurs primarily via helix-helix interface, in which strictly conserved residue T187 plays a critical role \parencite{Hale2008c, Kerry2011}. Unlike stable \gls{RBD} dimerization, the interactions between \gls{ED} monomers are likely to be transient \parencite{Kerry2011, Hale2014}.
+		
+		Dimerization is important for \gls{NS1} function and \gls{NS1} monomers have not been observed \textit{in vitro} and \textit{in vivo} \parencite{Hale2014}. Interestingly, the full-length protein not only can dimerize, but also may form tubular oligomers with the tunnel inside \parencite{Bornholdt2008}. The formation of such oligomers is mediated by inter-NS1 interactions of both \gls{RBD} and \gls{ED} \parencite{Bornholdt2008, Carrillo2014}. In addition, full-length \gls{NS1} retains conformational plasticity with three possible orientations of \gls{ED} to \gls{RBD}. The preference certain states is dependent on \gls{NS1} inter-domain linker length, residue 71 and a mechanical hinge and determines strain-specific variations in \gls{NS1} structure and function \parencite{Carrillo2014}.
+		
+		
+		\subsubsection{Inhibition of IFN signaling at pre-transcriptional level}
+		
+		NS1 was initially discovered as inhibitor of interferon and further studies confirmed that the main function of NS1 is inhibition of innate immune responses in infected cells. The mechanisms behind this function of NS1 has been extensively studies over past two decades and in the current paradigm NS1 inhibits development of immune responses via pre-transcriptional inhibiting of PRR signaling, co- and post-transcriptional inhibition of host gene expression and post-translational inhibition of interferon stimulated gene products.
+		
+		
+		
+		Kochs2007
+		some NS1 inhibit IRF3 and IFNB signaling
+		strain-specific differences
+		
+		Haye2009
+		in DCs
+		TX 1-126 cannot block IFN response
+		less late viral protein expression
+		Tx 1-99 and 1-126 have more phospho-IRF3
+		DCs infected with NS1 mutants have upregulation of IFN I responses, ISGs adn proinflammatory genes. They are better in stimulating adaptive immune responses
+		WT human isolate (Tx) is better inhibitor than PR8
+		
+		Talon2000
+		NS1 inhibits IRF3 
+		NS1 is a general inhibitor of IFN signaling (plasmid expression)
+		
+		Opitz2007
+		infection of epithelial cells with deficient NS1 promotes RIG-I and MDA5 activation
+		RIG-I--MAVS--IRF3 are involved in IFN signaling in response to IAV
+		NS1 can inhibit IFN signaling (no mechanism shown)
+		
+		Mibayashi2007a
+		NS1 is in the insoluble (=mt membrane) complex with RIG-I and MAVS and inhibits RIG-I signaling (independent on RNA binding) -- but no direct inhibitory contact shown
+		NS1 inhibits RIG-I mediated nuclear translocation of IRF3 and activation of IFNB promoter
+		
+		Munir2011a
+		Allele A NS1 are better in NFkB inhibition than allele B
+		this is species independent
+		mapped to ED 
+		
+		Munir2012
+		Allele A NS1 are better in inhibition of AP-1 than allele B
+		mapped to ED
+		
+		Geiss2002
+		gene expression profiling wt vs delNS1
+		NFKBIA, IL-8, TNFRSF6, and HLA-C genes up in delNS1
+		actin alpha not affected
+		up in delNS1: ISGs, e MX1?MXA, in addition to IFI75, IFI41, IRF1, ISGF3-
+		? ?IRF9 and others
+		mut in NS1 -- more pronounced expression of IFN and NFkB regulated genes
+		STAT pathway stronger activated in del NS1
+		NS1 from 1918 is more effective than NS1 WSN
+		
+		Ludwig2002
+		NS1 inhibits JNK and c-Jun
+		NS1 inhibits AP-1 regulated genes
+		NS1 inhibits dsRNA mediated JNK activation
+		R38 K41 needed -> propose that dsRNA binding activity is needed
+		both nuclear and cytoplasmic NS1s inhibit
+		
+		Wang2000
+		del NS1 induces NFkB activation and IFNB promoter
+		wtNS1 prevents dsRNA- and virus-mediated NFkB induction
+		RBD is enough, R38 K41 are important
+		
+		Pauli2008
+		5' ppp induces STAT1
+		SOCS3 (inhibitor of JAK/STAT) increase in NFkB activated infected cells
+		SOCS3 inhibits STAT1
+		
+		Tisoncik2011
+		gene expr with C-term truncated NS1 (1-126)
+		stronger induction of IFNB1, CXCL10, IFIT2, IFIT3, MXA -> they claim its because NFkB regulation
+		ub-proteasome pathway induced in mutants, TRIM25 only in A549
+		IFN-stimulated immune-proteasome and antigen- presentation pathways are regulated by NS1
+		
+		Ruckle2012a
+		non-canonical NFkB is linked to daptive immune responses activation
+		NS1 inhibits non-canonical NFkB via RIG-I and inhibits CCL19
+		stain-nonspecific
+		NS1 inhibits non-canonical NFkB via RIG-I inhibition
+		canonical is supressed only partially, non-canonical fully
+		
+		Gao2012
+		NS1 physically interacts with IKK alpha and beta, 
+		inhibits IKK beta phosphorylation funtion and prevents deregulation of IkB in classical pathway
+		also prevents IKK alpha mediated processing of p100 in p52 in non-canonical pathway
+		this inhibits NFkB nuclear translocation
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		NS1 was discovered as anti-interferon protein, then it was found that functional NS1 is necessary for virus growth in immune competent systems and viruses with truncated or delNS1 are not growing in normal cells, but grow in vero and are lethal in stat-/- mice. The role of NS1 is established and it is to secure viral replication, but the strategy can be unclear. This is because its multifunctionality.
+		
+		\textit{Bring in the detailed information on NS1 interactions with viral and cellular factors with a focus on limitation of cellular responses to infection. Possibly subdivide this section further in subsections. Establish links to translation and transcription studies that are included in the paper.}
+		
+		NS1 temperature sensitive mutants revealed also a possible role of NS1 in late steps of viral replication cycle \parencite{Garaigorta2005}.
+		
+		\subsubsection{NS1 diversity}
+		
+		alleles A and B based on sequence
+		functions of NS1 may be specific to cell type or to virus subtype
+		many motifs for interactions 
+		some motifs are conserved, whereas some are variable
+		NS1 can loose/acquire some during evolution
+		
+		there are sequence polymorphisms, modificaitons polymorphisms, structure (ex del linker). there are length polymorphisms -- Hale paper -- what is the role?
+		
+		Responses can be dependent of viral subtype -- MyD88 is not required for H1N1, but is required for H3N2 (Seo2010, LeGoffic2006)
+		
+		
+		%Regulation of interferon-β by MAGI-1 and its interaction with influenza A virus NS1 protein with ESEV PBM.		Kumar M, Liu H, Rice AP.
+		
+		%Suarez and Perdue, 1998 C-term length
+		
+		%The deletion of residues 80–84 found in recent H5N1 strains is
+		%implicated in cytokine resistance but not virulence9,11
+		%9. Seo, S.H., Hoffmann, E. & Webster, R.G. Nat. Med. 8, 950–954 (2002). 10. Seo, S.H., Hoffmann, E. & Webster, R.G. Virus Res. 103, 107–113 (2004). 11.Lipatov,A.S. et al. J. Gen. Virol. 86, 1121–1130 (2005).
+		%Li, K. S. et al. Genesis of a highly pathogenic and potentially pandemic H5N1 influenza virus in eastern Asia. Nature 430, 209–213 (2004)
+		
+		\textit{Discuss natural diversity of NS1. This is an important link to C-terminus manuscript and also to Kainov et al. study. Discuss here also that NS1 is an important virulence determinant, possibly refer to 1918 H1N1 NS1 and H5N1 NS1 proteins.}
+		
+		\subsubsection{NS1 as a therapeutic target -- this goes to discussion}
+		
+		\textit{Discuss the importance of NS1 for successful viral replication, possibly (?) delNS1 vaccine and attempts to develop drugs targeting NS1. Finish with stressing the importance of thorough understanding of IAV-host cell intercations for development of novel treatment options and IAV surveilance.}

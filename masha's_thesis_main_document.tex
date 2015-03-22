@@ -34,7 +34,7 @@
 \usepackage{graphicx}                             % for inserting images
 \graphicspath{ {./images/} }                % a path to files with images "images" folder is in same folder as main document
 \setlength\fboxsep{3pt}                           % distance btween \fbox{} frame and the image 
-\setlength\fboxrule{1pt}                          % \fbox{} frame line width
+\setlength\fboxrule{0pt}                          % \fbox{} frame line width
 %\usepackage{wrapfig}                              % wrapping of figures with text
 
 
@@ -48,7 +48,7 @@
 \usepackage{multirow}                           % merging columns in table
 \usepackage{ltablex} % combination of longrable and tabularx
 
-\usepackage[format=plain, labelsep=period, singlelinecheck=false, labelfont=bf, figureposition=below, tableposition=above, figurewithin=none, skip=2pt, tablewithin=none]{caption} % tuning of captions features
+\usepackage[format=plain, labelsep=period, singlelinecheck=false, labelfont=bf, font={sf, small}, figureposition=below, tableposition=above, figurewithin=none, skip=2pt, tablewithin=none]{caption} % tuning of captions features
 
 \usepackage{multicol}                           % allows merging several columns
 \usepackage{multirow}                           % allows merging several rows
@@ -109,9 +109,16 @@
 % % % % % % % % % %ACRONYMS % % % % % % % % % % % %
 % % % % % % % % % % % % % % % % % % % % % % % % % %
 
-\usepackage[savewrites=true,acronym, nomain, toc]{glossaries} % a package for abbreviation list
+\usepackage[savewrites=true, section, nopostdot, nogroupskip, acronym, nomain, toc]{glossaries} % a package for abbreviation list
+% nogroupskip = remove alphabetical grouping of entries
+%\usepackage{glossary-mcols}
+\usepackage{glossary-longragged}
+
 \renewcommand*{\glossaryentrynumbers}[1]{} % no page numbers in acronym list
-\renewcommand*{\glspostdescription}{} % remove a dot after acronym description
+
+\renewcommand{\glossarysection}[2][]{}
+
+
 
 \makeatletter
 
@@ -261,27 +268,25 @@
 
 \usepackage[backend=biber, 
 citestyle=authoryear, 
-uniquename=false, 
+%uniquename=false,
+%uniquelist=minyear, 
 dashed=false %reprint recurrent author names in bibliography
-maxbibnames=99, 
 maxcitenames=2, 
+maxbibnames=99,
 firstinits=true, 
 terseinits=true, 
 bibstyle=authortitle, 
 doi=false, 
 url=false,
 useprefix=true, %includes prefix 'de' 'la' etc 
-uniquename=false,
 labelyear=true,
-uniquelist=false,
-uniquelist=minyear,
 isbn=false]{biblatex}
 
 \renewcommand*{\nameyeardelim}{\addcomma\space} % adds a comma between authors and year in the in-text citation
 \DeclareNameAlias{default}{last-first} % initials appear after surname in bibliography
 \DeclareNameAlias{sortname}{last-first} % in bibliogaraphy last name, then initials for all authors
 \renewcommand*{\revsdnamepunct}{} % no comma between surname and initials
-\DeclareFieldFormat{titlecase}{\MakeSentenceCase{#1}}
+\DeclareFieldFormat[journal]{titlecase}{\MakeSentenceCase{#1}} %capitalize journal titles
 
 \bibliography{anastasina.bib}
 \bibliography{library/thesis_library.bib}
@@ -320,6 +325,7 @@ isbn=false]{biblatex}
   {\usebibmacro{postnote}}
 
 
+%\usepackage{printlen} % useful to determint textwidth used in the document, its useful to know for figure size adjustments
 
 % % % % % % % % % % % % % % % % % % % % % % % % % % 
 % % % % % % % %END OF PREAMBLE % % %% % % % % % % %
@@ -327,6 +333,8 @@ isbn=false]{biblatex}
 	
 \begin{document}
 \begin{singlespace}
+
+%\uselengthunit{mm}\printlength{\textwidth} %this command prints out the textwidth value in mm
 
 % % % % % % % % % % % % % % % % % % % % %
 % % % % % TITLE PAGE (MANUAL) % % % % % %
@@ -413,11 +421,11 @@ isbn=false]{biblatex}
 
 % {\fboxsep=0pt\colorbox{green!50}{\strut правильно}}
 
-ISBN TBD (paperback)
+ISBN 978-951-51-0960-6  (paperback)
 
-ISBN TBD \\
+ISBN 978-951-51-0961-3 (PDF) \\
 
-Helsinki 2015.
+Helsinki 2015
 \end{singlespace}
 
 % % % % % % % % % % % % % % % % % % % % %
@@ -449,7 +457,7 @@ This thesis is based on the following publications and manuscripts which are ref
 	\begin{enumerate}[I]
 
 	\item \textbf{Anastasina M*}, Le May N*, Butcher SJ, Egly JM, Kainov DE. Influenza A non-structural protein NS1 binds DNA to control host antiviral gene expression. \textit{Manuscript}. (* = equal contribution). \label{DNA}	
-	\item 	Kainov DE, Müller KH, Theisen LL, \textbf{Anastasina M}, Kaloinen M, Muller CP. Differential effects of NS1 proteins of human pandemic H1N1/2009, avian highly pathogenic H5N1, and low pathogenic H5N2 influenza A viruses on cellular pre-mRNA polyadenylation and mRNA translation. \textit{Journal of Biological Chemistry.} 2011 Mar 4;286(9). \label{Transl}		
+	\item 	Kainov DE, M{\"u}ller KH, Theisen LL, \textbf{Anastasina M}, Kaloinen M, Muller CP. Differential effects of NS1 proteins of human pandemic H1N1/2009, avian highly pathogenic H5N1, and low pathogenic H5N2 influenza A viruses on cellular pre-mRNA polyadenylation and mRNA translation. \textit{Journal of Biological Chemistry.} 2011 Mar 4;286(9). \label{Transl}		
 	\item \textbf{Anastasina M}, Schepens B, Saksela K, Saelens X, Kainov D. The length of C-terminus of influenza NS1 is essential for virus-host interplay. \textit{Manuscript}. \label{Cterm}	
 	\item \textbf{Anastasina M}, Terenin I, Butcher S, Kainov D. A technique to increase protein yield in a rabbit reticulocyte lysate translation system. \textit{Biotechniques.} 2014. 56(1):36-9. \label{RRL}
 	
@@ -490,7 +498,20 @@ This work addresses several aspects of NS1-mediated modulation of core cellular 
 
 \pagebreak
 %\thispagestyle{empty}
+\section*{Abbreviations} 
+\phantomsection % allows correct anchoring of this section in toc
+\addcontentsline{toc}{section}{Abbreviations} %add to toc
+
+\vspace{5mm}
+
+\renewcommand{\baselinestretch}{0.4}%shrinks vertical space between entries in acronym list
+\large\small%setting type is required for the command above
+%\begin{multicols}{2}
 \printglossary[type=acronym, title={Abbreviations}]
+%\end{multicols}
+
+\renewcommand{\baselinestretch}{1}%sets vertical space back to normal
+\large\normalsize%
 \clearpage
 
 
